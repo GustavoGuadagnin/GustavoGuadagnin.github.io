@@ -1,0 +1,68 @@
+*{
+    font-family: 'roboto','sans-serif';
+    box-sizing: border-box;
+}
+
+.items{
+    padding-left: 1.2rem;
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
+}
+.texto{
+    padding-right: .4rem;
+    padding-left: .2rem;
+    font-size: 1.5rem;
+    padding-top: 0rem;
+    margin: 0;
+}
+.status{
+    padding-top: 0.5rem;
+    padding-right: .4rem;
+    padding-left: .4rem;
+    font-size: .8rem;
+    margin: 0;
+}
+.degrees{
+    margin: 0;
+    font-size: 3.6rem;
+    padding-left: 0.3rem;
+}
+.cardMatch{
+    margin: .4rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 1rem;
+    background-color: black;
+    opacity: .1;
+    height: 7rem;
+    width: auto;
+    color: white;
+    border-radius: 1rem;
+}
+.cardMatch h1{
+   padding-left: 0.8rem;
+}
+.nameCity{
+    padding: 1rem;
+    background-color: #f2f2f2;
+    padding-top: 2rem;
+    width: 100vw;
+}
+body{
+    background-color: #f2f2f2;  
+}
+.content{
+    padding: 1rem;
+    background-color: #f2f2f2;
+    padding-top: 10rem;
+    width: 100vw;
+}
+.titulo{
+    padding-top: 2rem;
+    font-size: 10px;
+    padding-left: 6rem;
+}
+a {
+    text-decoration: none;
+   }
