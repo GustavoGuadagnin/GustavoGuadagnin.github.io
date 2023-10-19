@@ -14,7 +14,7 @@
 
 }
 .body_grey{
-    margin-top: 120px;
+    margin-top: 7.5rem;
     display: grid;
     place-items: center;
     gap: 8rem;
@@ -33,23 +33,23 @@
     gap:53rem;
 }
 .about-me{
-    line-height: 15px;
+    line-height: 0.93rem;
     text-align: center;
 }
 .about-me .i_develop h2{
     font-family: Onest;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 250;
 }
 .bold{
     font-weight: bold;
 }
 .about-me .i_do{
-    padding-top: 100px;
+    padding-top: 6.25rem;
     font-family: Onest;
-    font-size: 48;
+    font-size: 3rem;
     font-weight: 500;
-    padding-bottom: 30px;
+    padding-bottom: 1.87rem;
 }
 .about-me::after{
     content: '';
@@ -62,26 +62,26 @@
 }
 .last{
     font-family: Onest;
-    font-size: 40;
+    font-size: 2.5rem;
     font-weight: 500;
 }
 .card_area .main_card::before{
     z-index: 2;
     color: white;
-    left: 5px;
+    left: 0.31rem;
     content: 'The Last one Project';
     width: 100%;
     position: absolute;
-    bottom: 420px;
+    bottom: 26.25rem;
     font-family: Mooli;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: bolder;
 }
 .card_area .tittle{
     position: absolute;
     color: blue;
     z-index: 6;
-    right: 300px;
+    right: 18.75rem;
 }
 .card_area{
     justify-content: end;
@@ -97,15 +97,15 @@
     position: relative;
 }
 .main_card{
-    box-shadow: 0 0 55px rgba(0, 0, 0, 0.8);
-    box-shadow: 10px;
-    margin-right: 10px;
+    box-shadow: 0 0 3.43rem rgba(0, 0, 0, 0.8);
+    box-shadow: 0.625rem;
+    margin-right: 0.625rem;
     transform: rotate(3deg);
-    margin-top: 20px;
+    margin-top: 1.25rem;
     border-radius: 1.25rem;
     background-color: 363636;
-    height: 400px;
-    width: 300px;
+    height: 25rem;
+    width: 18.75rem;
 }
 .card_area .date{
     color: white;
@@ -115,41 +115,41 @@
 }
 .card_area a{
     font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     color: white;
     font-weight: 450;
     text-decoration: none;
     padding: 1rem 2rem;
     background-color: 00BC57;
-    border-radius: 20px;
+    border-radius: 1.25rem;
 }
 .card{
-    box-shadow: 0 0 55px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 3.43rem rgba(0, 0, 0, 0.8);
     z-index: 1;
-    margin-top: 20px;
+    margin-top: 1.25rem;
     border-radius: 1.25rem;
     background-color: 363636;
-    height: 400px;
-    width: 300px;
+    height: 25rem;
+    width: 18.75rem;
     position: absolute;
 }
 .card:nth-child(2) {
-    left: 120px;
+    left: 7.5rem;
     position: relative;
     z-index: 2;
 }
 .card:nth-child(3) {
-    left: 40px;
+    left: 2.5rem;
     position: relative;
     z-index: 3;
 }
 .card:nth-child(4) {
-    right: 20px;
+    right: 1.25;
     position: relative;
     z-index: 4;
 }
 .card:last-child{
-    margin-right: 86px;
+    margin-right: 5.37rem;
 }
 .last{
     margin-top: 11.25rem;
@@ -158,7 +158,7 @@
     padding-top: 1rem;
 }
 .intro{
-    gap: 650px;
+    gap: 40.62rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -166,9 +166,9 @@
 
 
 .profile img{
-    padding-right: 40px;
-    height: 300px;
-    width: 300px;
+    padding-right: 2.5rem;
+    height: 18.75rem;
+    width: 18.75rem;
 }
 .profile::after{
     content: '';
@@ -190,8 +190,8 @@
 }
 .info{
     position: relative;
-    padding-top: 50px;
-    padding-bottom: 80px;
+    padding-top: 3.12rem;
+    padding-bottom: 5rem;
     margin-left: none;
     text-align: center;
     margin-top: 5rem;
@@ -201,35 +201,35 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap:40px;
+    gap:2.5rem;
 }
 .subtittle:nth-child(4){
-    gap: 20px;
+    gap: 1.5rem;
 }
 .subtittle:nth-child(5){
-    gap: 30px;
+    gap: 1.87rem;
 }
 .intro .introduce h1 {
     font-family: "Onest";
-    line-height: 0px;
-    font-size: 64px;
+    line-height: 0rem;
+    font-size: 4rem;
     font-weight: 100;
 }
 .i_am{
     font-family: Mooli;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 .fromBrazil h2{
     font-family: Mooli;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 .fromBrazil span{
     color: 00BC57;
     font-family: Mooli;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 .text{
-    line-height: 10px;
+    line-height: 0.62rem;
 }
 
 .intro .introduce .bold {
@@ -250,7 +250,7 @@ ul a{
 }
 ul li{
     font-family: Onest;
-    font-size: 18px;
+    font-size: 1.12rem;
     padding-top: 1rem;
 }
 .logo{
@@ -265,66 +265,66 @@ ul li{
     margin: 0;
     padding: 1rem 2rem;
     background-color: 00BC57;
-    border-radius: 20px;
+    border-radius: 1.25rem;
 }
 .course{
     align-items: end;
     position: relative;
-    gap: 530px;
+    gap: 33.12rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
 .language:not(:last-child)::before{
-    top: 70px;
+    top: 3.37rem;
     content: '';
-    right: 74px;
+    right: 4.62rem;
     position: absolute;
     background-color: 8F8F8F;
-    width: 995px;
-    height: 1px;
+    width: 62.18rem;
+    height: 0.0625rem;
 }
 .course:not(:last-child)::after{
-    top: 70px;
+    top: 4.37rem;
     content: '';
-    right: 108px;
+    right: 6.75rem;
     position: absolute;
     background-color: 8F8F8F;
-    width: 960px;
+    width: 60rem;
     height: 1px;
 }
 .language{
     text-align: start;
-    padding-left: 100px;
+    padding-left: 6.25rem;
     position: relative;
-    gap: 530px;
+    gap: 33.12rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 .card_others{
     text-align: start;
     position: relative;
-    padding: 20px;
-    margin-left: 150px;
-    margin-right: 150px;
+    padding: 1.25rem;
+    margin-left: 9.37rem;
+    margin-right: 9.37rem;
     background-color: white;
 }
 .card_languages{
     position: relative;
-    padding: 20px;
-    margin-left: 150px;
-    margin-right: 150px;
+    padding: 1.25rem;
+    margin-left: 9.37rem;
+    margin-right: 9.37rem;
     background-color: white;
 }
 footer{
-    padding-top: 15px;
+    padding-top: 1.006rem;
     color: white;
     text-align: center;
     background-color: black;
 }
 .contact_area{
     color: white;
-    padding: 25px 280px;
+    padding: 1.56rem 17.5rem;
     margin: 0;
     background-color: black;
 }
@@ -340,18 +340,18 @@ a{
 }
 .card_area .date{
     font-weight: 300;
-    font-size: 18px;
+    font-size: 1.12rem;
     font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .card_area .sub_tittle{
     color: 00BC57;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .card_area .desc{
     padding-bottom: 0px;
     font-family: Onest;
-    font-size:24px;
+    font-size:1.5rem;
     font-weight: 500;
 }
 .white_bold{
@@ -362,51 +362,51 @@ a{
 .subtittle{
     font-family: Onest;
     font-weight: 500;
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 .currently{
-    font-size: 26px;
+    font-size: 1.62rem;
     font-family: Mooli;
 }
 .course{
     text-align: start;
-    padding-left: 100px;
+    padding-left: 6.25rem;
     font-family: Onest;
-    font-weight: 500px;
-    font-size: 20px;
-    line-height: 32px;
+    font-weight: 31.25rem;
+    font-size: 1.25rem;
+    line-height: 2rem;
     color:black;
 }
 .workload_level{
     text-align: center;
     font-family: Onest;
-    font-weight: 500px;
-    font-size: 24px;
+    font-weight: 31.25rem;
+    font-size: 1.5rem;
     color:363636;
 }
 .language{
     font-family: Onest;
-    font-weight: 500px;
-    font-size: 20px;
-    line-height: 32px;
+    font-weight: 31.25rem;
+    font-size: 1.25rem;
+    line-height: 2rem;
     color:black;
 }
 .body_black h1:first-child{
     font-family: Onest;
     font-weight:550;
-    font-size: 38px;
+    font-size: 2.37rem;
     color: white;
 }
 .body_black h1{
     font-family: Onest;
     font-weight: 250;
-    font-size: 31px;
+    font-size: 1.93rem;
     color: white;
 }
 .body_black h1{
     font-family: Onest;
     font-weight: 250;
-    font-size: 31px;
+    font-size: 1.93rem;
     color: white;
 }
 @media(max-width:1600px){
