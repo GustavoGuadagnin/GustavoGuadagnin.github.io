@@ -410,11 +410,96 @@ a{
     color: white;
 }
 @media(max-width:1600px){
-    .header {
-        padding-top: 2rem;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 45rem;
+    .intro{
+        gap: 0;
+        align-items: end;
     }
-    
+    .about-me::after {
+        content: "";
+        width: 50rem;
+        height: 0.62rem;
+        background-color: rgb(0, 188, 87);
+        position: absolute;
+        left: 20.55rem;
+        margin-top: 1rem;
+    }
+    .profile img{
+        margin-top: 10px;
+        margin-right: 8px;
+    }
+    .card_area{
+        height: 450px;
+        width: 1276px;
+    }
+    .profile::before {
+        content: '';
+        right: 6.5rem;
+        bottom: 17.15rem;
+        height: 21.5rem;
+        width: 0.62rem;
+        background-color: rgb(0, 188, 87);
+        position: absolute;
+    }
+    .main_card{
+        margin-left:70px;
+        margin-right:0px;
+        height: 380px;
+        width: 280px;
+    }
+    .course:not(:last-child)::after {
+        top: 4.90rem;
+        content: '';
+        right: 3.55rem;
+        position: absolute;
+        background-color: 8F8F8F;
+        width: 59rem;
+        height: 0.0625rem;
+    }
+    .course{
+        gap:30.9rem;
+    }
+    .body_black{
+        height: 430px;
+    }
+    .contact_area{
+        height: 230px;
+    }
+    footer{
+        padding-top: 0px;
+    }
+    .body_black h1:first-child {
+        line-height: 0px;
+    }
+    .contact_area{
+        line-height: 30px;
+    }
+    .language:not(:last-child)::before {
+        top: 4.90rem;
+        content: '';
+        right: 3.55rem;
+        position: absolute;
+        background-color: 8F8F8F;
+        width: 59rem;
+        height: 0.0625rem;
+    }
+    .card_area .main_card::before {
+        line-height: 0px;
+    }
+    .card{
+        margin-top: 10px;
+        height: 380px;
+        width: 280;
+    }
+    .body_grey {
+        margin-top: 6rem;
+    }
+    .profile::after {
+        content: '';
+        top: 13.52rem;
+        right: 7.14rem;
+        position: absolute;
+        height: 0.62rem;
+        width: 20rem;
+        background-color: 00BC57;
+    }
 }
