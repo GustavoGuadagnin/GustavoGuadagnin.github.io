@@ -410,9 +410,10 @@ a{
     color: white;
 }
 @media(max-width:1600px){
-    .intro{
+    .intro {
         gap: 0;
-        align-items: end;
+        align-items: start;
+        padding-top: 20px;
     }
     .about-me::after {
         content: "";
@@ -504,5 +505,115 @@ a{
     }
     .header{
         gap:44.5rem;
+    }
+}
+@media(max-width:392px){
+    .nav-bar{
+        justify-content: start;
+    }
+
+    .header img{
+        display: none;
+    }
+    ul{
+        gap:1rem;
+    }
+    ul a{
+        font-size: 16px;
+    }
+    .nav-bar ul li:last-child {
+        margin: 0;
+        margin-top: 0.5rem;
+        padding: 0.5rem 1rem;
+        background-color: 00BC57;
+        border-radius: 1.10rem;
+    }
+
+    .profile img{
+        display: none;
+    }
+    .profile::before {
+        display: none;
+    }
+    .profile::after {
+        display: none;
+    }
+    .body_white{
+        justify-items: start;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .body_grey{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .body_black{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .header {
+        justify-content: start;
+        gap: 0rem;
+    }
+    .intro{
+        grid-template-columns: 1fr;
+    }
+    .intro .img{
+        display: none;
+    }
+    .intro .introduce h1 {
+        font-family: "Onest";
+        line-height: 0.5rem;
+        margin: 2.5rem;
+        font-size: 36px;
+        font-weight: 100;
+    }
+    .i_am {
+        margin-left: 2.5rem;
+        font-family: Mooli;
+        font-size: 16px;
+        line-height: 0px;
+    }
+    .fromBrazil {
+        line-height: 0px;
+        margin: 2.5rem;
+        font-family: Mooli;
+        font-size: 16px;
+    }
+    .about-me .i_do {
+    padding-top: 6.25rem;
+    font-family: Onest;
+    font-size: 36px;
+    text-align: start;
+    justify-self: start;
+    font-weight: 500;
+    margin-left:5rem;
+    padding-bottom: 1.87rem;
+}
+    main img{
+        margin-left: 40px;
+        justify-content: end;
+        width: 250px;
+    }
+    .about-me{
+        display: none;
+    }
+    .last{
+        margin-left: 2.5rem;
+        text-align: start;
+        font-size: 16px;
+    }
+    .card_area{
+        display: grid;
+        grid-template-columns: 1;
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+        width: 90%;
+        height: 2000px;
+        align-items: start;
+    }
+    .card h1{
+        height: 200px;
+        width: 100px;
     }
 }
