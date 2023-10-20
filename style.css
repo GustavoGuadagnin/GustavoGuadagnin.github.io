@@ -84,6 +84,7 @@
     right: 18.75rem;
 }
 .card_area{
+    margin-top: 140px;
     justify-content: end;
     color: white;
     text-align: center;
@@ -546,6 +547,7 @@ a{
     .body_grey{
         display: grid;
         grid-template-columns: 1fr;
+        justify-content: center;
     }
     .body_black{
         display: grid;
@@ -598,22 +600,112 @@ a{
     .about-me{
         display: none;
     }
+    .subtittle{
+        font-size: 20px;
+    }
+    .currently{
+        display: flex;
+        font-size: 12;
+        align-items: stretch;
+        flex-direction: column;
+    }
     .last{
-        margin-left: 2.5rem;
-        text-align: start;
-        font-size: 16px;
+            margin-left: 2.5rem;
+            text-align: start;
+            font-size: 16px;
     }
     .card_area{
-        display: grid;
-        grid-template-columns: 1;
-        margin-left: 2.5rem;
-        margin-right: 2.5rem;
-        width: 90%;
-        height: 2000px;
-        align-items: start;
+        align-content: start;
+        justify-content: center;
+        color: white;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 4.5rem;
+        width: 100%;
+        height: 1580px;
+        gap: 30px;
+        background-color: 00BC57;
+        border-radius: 1.25rem;
+    } 
+    .main_card{
+        transform: rotate(0deg);
+        box-shadow: 0 0 3.43rem rgba(0, 0, 0, 0.8);
+        box-shadow: 0.625rem;
+        border-radius: 1.25rem;
+        background-color: 363636;
+        height: 21rem;
+        width: 17rem;
+        margin-left: 0px;
     }
-    .card h1{
-        height: 200px;
-        width: 100px;
+
+    .card_area .date{
+        color: white;
     }
+    .card_area .subtittle{
+        color: 00BC57;
+    }
+    .card_area a{
+        font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 1.25rem;
+        color: white;
+        font-weight: 450;
+        text-decoration: none;
+        padding: 1rem 2rem;
+        background-color: 00BC57;
+        border-radius: 1.25rem;
+    }
+    .card{
+        box-shadow: 0 0 3.43rem rgba(0, 0, 0, 0.8);
+        margin-top: 1.25rem;
+        border-radius: 1.25rem;
+        background-color: 363636;
+        height: 21rem;
+        width: 17rem;
+    }
+    .card:nth-child(2) {
+        left: 0rem;
+    }
+    .card:nth-child(3) {
+        left: 0rem;
+    }
+    .card:nth-child(4) {
+        right:0;
+    }
+    .card:last-child{
+        margin-right:0rem;
+    }
+    .card_area .main_card::before{
+        z-index: 2;
+        color: white;
+        left: 0.31rem;
+        content: 'Latest projects';
+        width: 100%;
+        position: absolute;
+        bottom: 24rem;
+        font-family: Onest;
+        font-size: 2rem;
+        font-weight: bolder;
+    }
+    .last{
+        display: none;
+    }
+
+    .card_others{
+        display: none;
+    }
+    .card_languages{
+        display: none;
+    }
+    .contact_area{
+        display: none;
+    }
+    .body_black footer h1{
+        font-size: 16px;
+    }
+    .body_black{
+        display: none;
+    }
+
+
 }
