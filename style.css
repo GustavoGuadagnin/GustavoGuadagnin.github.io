@@ -502,4 +502,7 @@ a{
         width: 20rem;
         background-color: 00BC57;
     }
+    .header{
+        gap:43rem;
+    }
 }
