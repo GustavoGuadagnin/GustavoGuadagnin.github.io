@@ -4,7 +4,8 @@
     var objeto = await resposta.json();
     listarProdutos(objeto);
   });
-  alert('**IMPORTANT**\nI used a API to take the data in real-time,so the weather-data showed is real,')
+  alert('This project was made for phone, and its not yet finished, its only here to show skills ')
+  alert('**IMPORTANT**\nI used a API to take the data in real-time,so the weather-data showed is real\n :),')
   function listarProdutos(lista){
     var conteudo='';
     var humidity='';
