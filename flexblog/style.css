@@ -31,9 +31,14 @@
     .super-sobre .text p{
         font-size: 20px;
     }
-    }.text .segundo{
+    .super-sobre .text p:last-child{
         display: none;
     }
+    .super-sobre .item {
+        flex: 1 1 160px;
+    }
+    }
+
     main .titulo-principal h1{
         font-size: 28px;
     }
@@ -140,6 +145,7 @@ img{
     padding: 0;
 }
 .text{
+    margin-top: 10px;
     margin-right: 95px;
 }
 .super-sobre{
