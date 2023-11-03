@@ -28,7 +28,22 @@
         margin-left: 100%;
         margin-top: 5%;
     }
-  }
+    .super-sobre .text p{
+        font-size: 20px;
+    }
+    }.text .segundo{
+        display: none;
+    }
+    main .titulo-principal h1{
+        font-size: 28px;
+    }
+    main .super-sobre .text h1{
+        font-size: 28px;
+    }
+    .produtos .produto-text{
+        font-size: 28px;
+    }
+
 ul {
     text-decoration: none;
     list-style: none;
