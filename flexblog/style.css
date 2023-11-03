@@ -15,11 +15,20 @@
     justify-content: center;
 }
 .logo a{
+    align-self: center;
+    max-width: 500px;
+    margin: 0 auto;
     display: block;
     color: white;
     text-decoration: none;
     font-size: 32px;
 }
+@media screen and (max-width: 460px) {
+    .logo a{
+        margin-left: 100%;
+        margin-top: 5%;
+    }
+  }
 ul {
     text-decoration: none;
     list-style: none;
@@ -34,10 +43,14 @@ li a{
     font-family: Arial, Helvetica, sans-serif;
 
 }
+header div div a{
+    font-family: Arial, Helvetica, sans-serif;
+}
 .super-info{
     background-color: blue;
 }
 .info{
+    display: flex;
     max-width: 1200px;
     height: 40px;
     margin: 0 auto;
@@ -78,6 +91,10 @@ main{
     display: flex;
     margin-bottom: 80px;
 }
+.produtos .produto-text{
+    padding-top: 60px;
+    border-top: 3px solid  rgb(0, 200, 255);
+}
 .sobre{
     border-bottom: 2px solid rgb(0, 179, 255);
 }
@@ -89,16 +106,17 @@ img{
 }
 .img{
     display: flex;
+    flex-wrap: wrap;
 }
 .produtos img .item h1{
     margin-left: 5px;
 }
 .img .item{
     background-color: rgb(238, 238, 238);
-    flex: 1 1 80px
+    flex: 1 1 100px
 }
 
-.img{
+.img {
     gap:15px;
     align-items: flex-end;
 }
@@ -126,9 +144,6 @@ img{
 .super-sobre .item{
     margin-top: 90px;
     flex: 1 1 160px;
-}
-.produtos{
-    border-top: 3px solid  rgb(0, 200, 255);
 }
 .produtos h1{
     font-size: 42px;
@@ -252,33 +267,33 @@ img{
     font-weight: lighter;
     margin-bottom: 40px;
 }
-.qualidade div:nth-child(1):after,
-.qualidade div:nth-child(4):after {
+.qualidade div:nth-child(1):before,
+.qualidade div:nth-child(4):before {
     content: '';
     left: 30px;
-    bottom: 264px;
+    top:32px;
     display: block;
     height: 28px;
     width: 7px;
     background-color: rgb(134, 96, 239);
     position: relative;
 }
-.qualidade div:nth-child(2):after,
-.qualidade div:nth-child(5):after {
+.qualidade div:nth-child(2):before,
+.qualidade div:nth-child(5):before {
     content: '';
     left: 30px;
-    bottom: 292px;
+    top:32px;
     display: block;
     height: 28px;
     width: 7px;
     background-color: rgb(255, 0, 0);
     position: relative;
 }
-.qualidade div:nth-child(3):after,
-.qualidade div:nth-child(6):after {
+.qualidade div:nth-child(3):before,
+.qualidade div:nth-child(6):before {
     content: '';
     left: 30px;
-    bottom: 264px;
+    top:32px;
     display: block;
     height: 28px;
     width: 7px;
@@ -288,6 +303,7 @@ img{
 .newsLetter{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     padding: 40px 0px 40px 0px;
     background-color: rgb(255, 255, 255);
 }
@@ -314,9 +330,13 @@ img{
 .nl-titulo{
     font-size: 54px;
 }
+.nl-item-1{
+    flex: 1 1 200px;
+}
 .nl-item-2 input{
+    flex: 3 1 200px;
     padding: 20px;
-    width: 550px;
+    width: 350px;
     height: 60px;
     font-size: 36px;
     border: 3px solid rgb(29, 110, 249);;
@@ -329,14 +349,16 @@ img{
     border: 3px solid rgb(29, 110, 249);;
 }
 .nl-item-3 button{
+    flex: 1 1 200px;
     padding: 0px;
     margin: 0px;
     height: 60px;
-    width: 200px;
+    width: 150px;
     color: white;
     font-size: 24px;
     background-color: rgb(29, 110, 249);
     border: none;
+    cursor: pointer;
 }
 .nl-items{
     margin-left: 28px;;
@@ -349,4 +371,20 @@ img{
 .nl-item-1{
     align-self: start;
     flex:1 1 200px;
+}
+
+footer h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 24px;
+}
+
+footer{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    color: rgb(6, 6, 6);
+    background-color: rgb(3, 112, 214);
+    height: 200px;
 }
