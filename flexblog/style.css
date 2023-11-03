@@ -1,0 +1,352 @@
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.link{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    align-self: center;
+}
+.align-center{
+    align-items: center;
+}
+.justify-center{
+    justify-content: center;
+}
+.logo a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 32px;
+}
+ul {
+    text-decoration: none;
+    list-style: none;
+    gap: 20px;
+    padding-right: 176x;
+}
+li a{
+    color: white;
+    text-decoration: none;
+}
+.fonte{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.super-info{
+    background-color: blue;
+}
+.info{
+    max-width: 1200px;
+    height: 40px;
+    margin: 0 auto;
+    justify-content: space-between;
+    font-size: 12px;
+    color: white;
+}
+.logo{
+    padding-left: 174x;
+    font-size: 20px;
+}
+header{
+    background-color: rgb(3, 112, 214);
+    font-family: Arial, Helvetica, sans-serif;
+    height: 80px;
+}
+.menu{
+    height: 80px;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+main{
+    font-family: 'Courier New', Courier, monospace;
+    max-width: 1200px;
+    margin: 30px auto;
+    position: relative;
+}
+.titulo-principal{
+    margin-top: 60px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid rgb(0, 179, 255);
+}
+.titulo-principal h1{
+    font-size: 40px;
+}
+.super-sobre{
+    display: flex;
+    margin-bottom: 80px;
+}
+.sobre{
+    border-bottom: 2px solid rgb(0, 179, 255);
+}
+main h1{
+    font-size: 32px;
+}
+img{
+    max-width: 100%;
+}
+.img{
+    display: flex;
+}
+.produtos img .item h1{
+    margin-left: 5px;
+}
+.img .item{
+    background-color: rgb(238, 238, 238);
+    flex: 1 1 80px
+}
+
+.img{
+    gap:15px;
+    align-items: flex-end;
+}
+.texto p{
+    margin: 0;
+    padding: 0;
+}
+.text{
+    margin-right: 95px;
+}
+.super-sobre{
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.super-sobre h1{
+    font-size: 42px;
+}
+.super-sobre p{
+    font-size: 22px;
+}
+.super-sobre .text{
+    flex: 2 1 500px;
+}
+.super-sobre .item{
+    margin-top: 90px;
+    flex: 1 1 160px;
+}
+.produtos{
+    border-top: 3px solid  rgb(0, 200, 255);
+}
+.produtos h1{
+    font-size: 42px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+.img .item:first-child{
+    border-top: 8px solid purple;
+}
+.img .item:nth-child(2){
+    border-top: 8px solid rgb(246, 38, 72);
+}
+.img .item:last-child{
+    border-top: 8px solid rgb(0, 200, 255);
+}
+.img .item h1{
+    font-size: 40px;
+    margin-left: 30px;
+}
+.planos{
+    margin-top:60px;
+    padding: 40px;
+    background-color: rgb(238, 238, 238);
+    margin-bottom: 40px;
+}
+.container-planos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-end;
+}
+.container-planos .titulo-card{
+    font-size: 32px;
+}
+.container-planos >*{
+    font-family:sans-serif ;
+    border: 2px solid rgb(255, 255, 255);
+    margin-bottom: 20px;
+    flex: 1 1 250px;
+    padding-bottom: 30px;
+}
+.container-planos span sup{
+    font-size:22px;
+}
+.container-planos span,sup{
+    font-size:38px;
+}
+.titulo-card{
+    text-align: center;
+    color: grey;
+}
+.titulo-card::after{
+    content: '';
+    color: red;
+    width: 50%;
+    height: 55px;
+    position: absolute;
+}
+.valor{
+    text-align: center;
+}
+.valor .preco{
+
+    font-size: 44px;
+}
+.beneficios{
+    margin: 0 90px;
+    text-align: left;
+}
+.btn{
+    align-self: center;
+    font-size: 16px;
+    border: 2px solid black;
+    width: 100%;
+    align-self:self-end;
+    padding: 20px 40px;
+}
+.planos h1{
+    font-weight: lighter;
+    font-size: 20px;
+}
+.planos .beneficios h1{
+    font-style: italic;
+}
+
+.planos .beneficios h1::after{
+    content: '';
+    display: block;
+    height: 6px;
+    width: 6px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    position: relative;
+    left: 220px;
+    bottom: 14px;
+}
+.qualidade{
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-bottom: 2px solid blue;
+}
+.qualidade div{
+    flex:1 1 300px;
+}
+.qualidade .titulo{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300;
+    margin: 0;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    color:rgb(162, 159, 159);
+}
+.qualidade .desc{
+    font-size: 24px;
+    margin: 0;
+    margin-left: 28px;
+    color:rgb(162, 159, 159);
+    font-weight: lighter;
+    margin-bottom: 40px;
+}
+.qualidade div:nth-child(1):after,
+.qualidade div:nth-child(4):after {
+    content: '';
+    left: 30px;
+    bottom: 264px;
+    display: block;
+    height: 28px;
+    width: 7px;
+    background-color: rgb(134, 96, 239);
+    position: relative;
+}
+.qualidade div:nth-child(2):after,
+.qualidade div:nth-child(5):after {
+    content: '';
+    left: 30px;
+    bottom: 292px;
+    display: block;
+    height: 28px;
+    width: 7px;
+    background-color: rgb(255, 0, 0);
+    position: relative;
+}
+.qualidade div:nth-child(3):after,
+.qualidade div:nth-child(6):after {
+    content: '';
+    left: 30px;
+    bottom: 264px;
+    display: block;
+    height: 28px;
+    width: 7px;
+    background-color: rgb(0, 247, 255);
+    position: relative;
+}
+.newsLetter{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 0px 40px 0px;
+    background-color: rgb(255, 255, 255);
+}
+.newsLetter .nl-titulo{
+    margin: 0px 28px;
+    margin-top: 15px;
+    font-size: 38px;
+    padding: 0;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    background-color: 2px solid rgb(189, 189, 189);
+}
+.newsLetter .nl-desc{
+    margin: 8px 28px;
+    padding: 0;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 100;
+}
+.newsLetter .nl-titulo,.nl-desc{
+    color:rgb(6, 5, 5)
+}
+.nl-titulo{
+    font-size: 54px;
+}
+.nl-item-2 input{
+    padding: 20px;
+    width: 550px;
+    height: 60px;
+    font-size: 36px;
+    border: 3px solid rgb(29, 110, 249);;
+}
+.nl-item-2 input::placeholder{
+    font-weight: lighter;
+    font-size: 24px;
+}
+.nl-item-2 input:focus {
+    border: 3px solid rgb(29, 110, 249);;
+}
+.nl-item-3 button{
+    padding: 0px;
+    margin: 0px;
+    height: 60px;
+    width: 200px;
+    color: white;
+    font-size: 24px;
+    background-color: rgb(29, 110, 249);
+    border: none;
+}
+.nl-items{
+    margin-left: 28px;;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    flex: 2 1 560px;
+
+}
+.nl-item-1{
+    align-self: start;
+    flex:1 1 200px;
+}
