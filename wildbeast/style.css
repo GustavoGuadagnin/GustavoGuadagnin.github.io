@@ -83,7 +83,7 @@ footer{
 .side-nav{
     padding: 1.87rem;
     display: grid;
-    justify-content: end;
+    justify-content: start;
     background-color: #fafbfc;
 }
 .side-nav ul img{
@@ -240,9 +240,6 @@ footer h1{
 }
 .side-nav ul{
     justify-items: end;
-}
-.side-nav{
-    justify-content: start;
 }
 @media (max-width: 1455px) {
     .side-nav{
