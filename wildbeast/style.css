@@ -305,13 +305,14 @@ footer h1{
     .side-nav ul{
         display: flex;
         gap: 0.625rem;
-        justify-content: space-around;
+        justify-content:space-around;
+        padding: 0;
     }
     .side-nav ul li{
         flex: 1 0 3.75rem;
     }
     .side-nav ul li:first-child{
-        margin-left: 0.625rem;
+        margin-left: 0px;
     }
     header .logo{  
         justify-self: center;
