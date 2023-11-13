@@ -6,6 +6,12 @@
     font-family: "Onest";
     src: url("/portifolio/font/Onest-VariableFont_wght.ttf") format("truetype");
 }
+.profile{
+    margin-top: 3.125rem;
+    margin-right: 0.625rem;
+    border-top: solid #00BC57 0.62rem;
+    border-right: solid #00BC57 0.62rem;
+}
 .body_white{
     display: grid;
     place-items: center;
@@ -38,7 +44,7 @@
 }
 .about-me .i_develop h2{
     font-family: Onest;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-weight: 250;
 }
 .bold{
@@ -47,7 +53,7 @@
 .about-me .i_do{
     padding-top: 6.25rem;
     font-family: Onest;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 500;
     padding-bottom: 1.87rem;
 }
@@ -167,27 +173,8 @@
 
 
 .profile img{
-    padding-right: 2.5rem;
     height: 18.75rem;
     width: 18.75rem;
-}
-.profile::after{
-    content: '';
-    top: 17rem;
-    right: 15.70rem;
-    position: absolute;
-    height: 0.62rem;
-    width: 21.87rem;
-    background-color: 00BC57;
-}
-.profile::before{
-    content: '';
-    right: 15.70rem;
-    bottom: 22.87rem;
-    height: 21.67rem;
-    width: 0.62rem;
-    background-color: 00BC57;
-    position: absolute;
 }
 .info{
     position: relative;
@@ -213,7 +200,7 @@
 .intro .introduce h1 {
     font-family: "Onest";
     line-height: 0rem;
-    font-size: 4rem;
+    font-size: 3.2rem;
     font-weight: 100;
 }
 .i_am{
@@ -363,10 +350,10 @@ a{
 .subtittle{
     font-family: Onest;
     font-weight: 500;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
 }
 .currently{
-    font-size: 1.62rem;
+    font-size: 1.4rem;
     font-family: Mooli;
 }
 .course{
@@ -433,15 +420,6 @@ a{
         height: 450px;
         width: 1276px;
     }
-    .profile::before {
-        content: '';
-        right: 6.5rem;
-        bottom: 17.15rem;
-        height: 21.5rem;
-        width: 0.62rem;
-        background-color: rgb(0, 188, 87);
-        position: absolute;
-    }
     .main_card{
         margin-left:70px;
         margin-right:0px;
@@ -495,14 +473,11 @@ a{
     .body_grey {
         margin-top: 6rem;
     }
-    .profile::after {
-        content: '';
-        top: 13.52rem;
-        right: 7.14rem;
-        position: absolute;
-        height: 0.62rem;
-        width: 20rem;
-        background-color: 00BC57;
+    .profile{
+        margin-top: 3.125rem;
+        margin-right: 0.625rem;
+        border-top: solid #00BC57 0.62rem;
+        border-right: solid #00BC57 0.62rem;
     }
     .header{
         gap:44.5rem;
@@ -531,12 +506,6 @@ a{
     }
 
     .profile img{
-        display: none;
-    }
-    .profile::before {
-        display: none;
-    }
-    .profile::after {
         display: none;
     }
     .body_white{
@@ -701,7 +670,7 @@ a{
         display: none;
     }
     .body_black footer h1{
-        font-size: 16px;
+        font-size: 1.8rem;
     }
     .body_black{
         display: none;
