@@ -1,5 +1,6 @@
 .side-nav img{
     max-width: 6.25rem;
+    min-width: 4.37rem;
 }
 .estrutura{
    display: grid;
