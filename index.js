@@ -1,1 +1,14 @@
-alert('some functions are not yet working\n, they are under development');
+const links = document.querySelectorAll("a[href^='#']");
+function scroll(event){
+    event.preventDefault();
+    const href = event.currentTarget.getAttribute("href");
+    const section = document.querySelector(href)
+    section.scrollIntoView({
+        block: 'start',
+        behavior: "smooth",
+    })
+}
+
+links.forEach((item)=>{
+    item.addEventListener("click",scroll);
+})
