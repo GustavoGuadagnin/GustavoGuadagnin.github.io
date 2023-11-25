@@ -1,16 +1,16 @@
 body{
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     position: relative;
 }
-body::before{
+/* body::before{
     position: absolute;
     border: solid 1px black;
     margin-top: 10px;
     top:60;
     content: "THIS WEBSITE IS NOT FINISHED.";
     color: blue;
-}
+} */
 header{
     display: flex;
     flex-wrap: wrap;
@@ -167,7 +167,6 @@ ul{
     padding: 20px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     border-radius: 0.625rem;
-
 }
 .card a{
     display: none;
@@ -320,5 +319,164 @@ body section.ativo{
     transform: translate3d(0,0,0);
     transition: .3s;
 }
-@media (max-width: 1250px) {
-  }
+
+@media (max-width: 800px) {
+    header{
+        margin-top: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center
+    }
+    header img{
+        margin-top: 1rem;
+    }
+    .intro .introduce h1 {
+        font-family: "Onest";
+        line-height: 0rem;
+        font-size: 2.5rem;
+        font-weight: 100;
+        text-align: center;
+    }
+    .text h2{
+        text-align: center;
+    }
+    .text{
+        padding-bottom: 1.8rem;
+    }
+    .introduce img{
+        padding-left: 2.5rem;
+    }
+    body{
+        width: 400px;
+        margin: 0 auto;
+        position: relative;
+    }
+    .body_black h1:first-child{
+        font-size: 1.6rem;
+    }
+    .subtittle{
+        font-size: 1.5rem;
+    }
+    .subtittle img {
+        margin-top: 2.3rem;
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .profile img{
+        display: none;
+    }
+    .body_black .contact_area{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        padding-bottom: 4rem;
+    }
+    .card_area{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .body_grey {
+        margin-top: 3.5rem;
+        display: grid;
+        background: #ececec;
+        text-align: center;
+        justify-content: center;
+    }
+    .contact img{
+        margin-left: 20px;
+        max-width: 100%;
+    }
+    .body_black .contact h1 {
+        font-size: large;
+    }
+    .contact h1 a{
+        font-size: large;
+    }
+    .language h1{
+        font-size: large;
+    }
+    .course h1{
+        font-size: large;
+    }
+    .card_others{
+        justify-content: space-between;
+        padding: 1.25rem 5rem 1.25rem 5rem;
+        justify-content: space-between;
+        text-align: start;
+        position: relative;
+        background-color: white;
+    }
+    .currently h1{
+        text-align: center;
+        font-size: 1rem;
+    }
+    .card_languages{
+        justify-content: space-between;
+        padding: 1.25rem 5rem 1.25rem 5rem;       
+        margin-bottom: 5rem;
+        background-color: white;
+    }
+    .course{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(1fr,1fr));
+    justify-content: space-between;
+    text-align: center;
+    font-family: Onest;
+    font-weight: 31.25rem;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    color:black;
+    border-bottom: solid 1px rgb(222, 218, 218);
+    gap: 90px;
+}
+    .language{
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(1fr,1fr));
+        justify-content: space-between;
+        text-align: center;
+        font-family: Onest;
+        font-weight: 31.25rem;
+        font-size: 1.25rem;
+        line-height: 2rem;
+        color:black;
+        border-bottom: solid 1px rgb(222, 218, 218);
+    }
+    .about-me .i_develop h2{
+        font-size: 1.5rem;
+    }
+    .introduce{
+        margin-top: 0;
+    }
+    .header img{
+        display: none;
+    }
+    .about-me{
+        line-height: normal;
+        margin-top: 0;
+        align-self: start;
+    }
+    .i_am {
+        font-family: Mooli;
+        font-size: 1.4rem;
+    }
+    .about-me .i_do {
+        padding-top: 6.25rem;
+        font-family: Onest;
+        font-size: 2.5rem;
+        font-weight: 500;
+        padding-bottom: 1.87rem;
+    }
+    .card{
+        cursor: pointer;
+        text-align: center;
+        padding: 20px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        border-radius: 0.625rem;
+    }
+
+}
