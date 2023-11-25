@@ -1,290 +1,54 @@
-@font-face {
-    font-family: "Mooli";
-    src: url("/portifolio/font/Mooli-Regular.ttf") format("truetype");
-}
-@font-face {
-    font-family: "Onest";
-    src: url("/portifolio/font/Onest-VariableFont_wght.ttf") format("truetype");
-}
-.arrow img{
-    border: solid black;
-    border-radius:50%;
-    width: 3.125rem;
-    position: absolute;
-    top: 14.37rem;
-    right: 1.125rem;
-}
-.none{
-    display: none!important;
-}
-.plus{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, auto));
-    margin-top: 140px;
-    justify-content: start;
-    color: white;
-    text-align: center;
-    padding-top: 4.5rem;
-    width: 100%;
-    height: 31rem;
-    background-color: 00BC57;
-    border-radius: 1.25rem;
-}
-.plus .main_card{
-    display: none;
-}
-.plus .date{
-    font-weight: 300;
-    font-size: 1.12rem;
-    font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-.plus .desc{
-    padding-bottom: 0px;
-    font-family: Onest;
-    font-size:1.5rem;
-    font-weight: 500;
-}
-.plus .sub_tittle{
-    color: 00BC57;
-    font-size: 1.5rem;
-    font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-.plus .date{
-    color: white;
-}
-.plus .subtittle{
-    color: 00BC57;
-}
-.plus a{
-    font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1.25rem;
-    color: white;
-    font-weight: 450;
-    text-decoration: none;
-    padding: 1rem 2rem;
-    background-color: 00BC57;
-    border-radius: 1.25rem;
-}
-.plus .card:first-child{
-    left: 14.5rem;
-    position: relative;
-    z-index: 2;
-}
-.plus .card:nth-child(2) {
-    left: 7.5rem;
-    position: relative;
-    z-index: 2;
-}
-.plus .card:nth-child(3) {
-    left: 2.5rem;
-    position: relative;
-    z-index: 3;
-}
-.plus .card:nth-child(4) {
-    right: 1.25;
-    position: relative;
-    z-index: 4;
-}
-.plus .card:last-child{
-    margin-right: 5.37rem;
-}
-.profile{
-    margin-top: 3.125rem;
-    margin-right: 0.625rem;
-    border-top: solid #00BC57 0.62rem;
-    border-right: solid #00BC57 0.62rem;
-}
-.body_white{
-    display: grid;
-    place-items: center;
-    gap: 5rem;
-    background-color: white;
+body{
+    width: 900px;
+    margin: 0 auto;
 
 }
-.body_grey{
-    margin-top: 7.5rem;
-    display: grid;
-    place-items: center;
-    gap: 8rem;
-    background-color: ECECEC;
-}
-.body_black{
-    display: grid;
-    place-items: center;
-    gap: 8rem;
-    background-color: black;
-}
-.header {
-    padding-top: 2rem;
+header{
     display: flex;
     flex-wrap: wrap;
-    gap:53rem;
+    justify-content: space-between;
 }
-.about-me{
-    line-height: 0.93rem;
-    text-align: center;
-}
-.about-me .i_develop h2{
-    font-family: Onest;
-    font-size: 2.2rem;
-    font-weight: 250;
-}
-.bold{
-    font-weight: bold;
-}
-.about-me .i_do{
-    padding-top: 6.25rem;
-    font-family: Onest;
-    font-size: 2.5rem;
-    font-weight: 500;
-    padding-bottom: 1.87rem;
-}
-.about-me::after{
-    content: '';
-    width: 50rem;
-    height: 0.62rem;
-    background-color: 00BC57;
-    position: absolute;
-    left: 34.81rem;
-    margin-top: 1rem;
-}
-.last{
-    font-family: Onest;
-    font-size: 2.5rem;
-    font-weight: 500;
-}
-.card_area .main_card::before{
-    z-index: 2;
-    color: white;
-    left: 0.31rem;
-    content: 'The Last one Project';
-    width: 100%;
-    position: absolute;
-    bottom: 26.25rem;
-    font-family: Mooli;
-    font-size: 1.25rem;
-    font-weight: bolder;
-}
-.card_area .tittle{
-    position: absolute;
-    color: blue;
-    z-index: 6;
-    right: 18.75rem;
-}
-.card_area{
-    margin-top: 8.75rem;
-    justify-content: end;
-    color: white;
-    text-align: center;
+.nav-bar ul{
     display: flex;
-    flex-wrap: wrap;
-    padding-top: 4.5rem;
-    width: 100%;
-    justify-content: start;
-    height: 31rem;
-    background-color: 00BC57;
-    border-radius: 1.25rem;
-    position: relative;
+    flex:wrap;
+    gap: 20px;
 }
-.main_card{
-    box-shadow: 0 0 3.43rem rgba(0, 0, 0, 0.8);
-    box-shadow: 0.625rem;
-    margin-right: 0.625rem;
-    transform: rotate(3deg);
-    margin-top: 1.25rem;
-    border-radius: 1.25rem;
-    background-color: 363636;
-    height: 25rem;
-    width: 18.75rem;
-}
-.card_area .date{
-    color: white;
-}
-.card_area .subtittle{
-    color: 00BC57;
-}
-.card_area a{
-    font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1.25rem;
-    color: white;
-    font-weight: 450;
-    text-decoration: none;
+.nav-bar ul li:last-child{
+    margin: 0;
     padding: 1rem 2rem;
     background-color: 00BC57;
     border-radius: 1.25rem;
 }
-.card{
-    box-shadow: 0 0 3.43rem rgba(0, 0, 0, 0.8);
-    z-index: 1;
-    margin-top: 1.25rem;
-    border-radius: 1.25rem;
-    background-color: 363636;
-    height: 25rem;
-    width: 18.75rem;
-    position: absolute;
+ul a{
+    text-decoration: none;
+    color: black;
 }
-.card:nth-child(2) {
-    left: 7.5rem;
-    position: relative;
-    z-index: 2;
-}
-.card:nth-child(3) {
-    left: 2.5rem;
-    position: relative;
-    z-index: 3;
-}
-.card:nth-child(4) {
-    right: 1.25;
-    position: relative;
-    z-index: 4;
-}
-.card:last-child{
-    margin-right: 5.37rem;
-}
-.last{
-    margin-top: 11.25rem;
-  }
-.nav-bar{
-    padding-top: 1rem;
-}
-.intro{
-    gap: 40.62rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
     align-items: center;
 }
-
-
-.profile img{
-    height: 18.75rem;
-    width: 18.75rem;
-}
-.info{
-    position: relative;
-    padding-top: 3.12rem;
-    padding-bottom: 5rem;
-    margin-left: none;
-    text-align: center;
-    margin-top: 5rem;
-    background-color: ECECEC;
-}
-.subtittle{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap:2.5rem;
-}
-.subtittle:nth-child(4){
-    gap: 1.5rem;
-}
-.subtittle:nth-child(5){
-    gap: 1.87rem;
+.header{
+    align-content: center;
 }
 .intro .introduce h1 {
     font-family: "Onest";
     line-height: 0rem;
     font-size: 3.2rem;
     font-weight: 100;
+}
+.intro .introduce .bold {
+    font-weight:500;
+}
+.i_am {
+    font-family: Mooli;
+    font-size: 16px;
+    line-height: 0px;
+}
+.text{
+    line-height: 0.62rem;
 }
 .i_am{
     font-family: Mooli;
@@ -299,116 +63,53 @@
     font-family: Mooli;
     font-size: 1.5rem;
 }
-.text{
-    line-height: 0.62rem;
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
 }
-
-.intro .introduce .bold {
-    font-weight:500;
-}
-.intro .profile {
+.profile{
+    align-self: center;
     justify-self: end;
+    grid-column: 2;
 }
-ul{
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
+.profile img{
+    height: 16.75rem;
+    width: 16.75rem;
 }
-ul a{
-    text-decoration: none;
-    color: black;
-}
-ul li{
-    font-family: Onest;
-    font-size: 1.12rem;
-    padding-top: 1rem;
-}
-.logo{
-    padding-top: 1rem;
-}
-.img ul{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.nav-bar ul li:last-child{
-    margin: 0;
-    padding: 1rem 2rem;
-    background-color: 00BC57;
-    border-radius: 1.25rem;
-}
-.course{
-    align-items: end;
-    position: relative;
-    gap: 33.12rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.language:not(:last-child)::before{
-    top: 3.37rem;
-    content: '';
-    right: 4.62rem;
-    position: absolute;
-    background-color: 8F8F8F;
-    width: 62.18rem;
-    height: 0.0625rem;
-}
-.course:not(:last-child)::after{
-    top: 4.37rem;
-    content: '';
-    right: 6.75rem;
-    position: absolute;
-    background-color: 8F8F8F;
-    width: 60rem;
-    height: 1px;
-}
-.language{
-    text-align: start;
-    padding-left: 6.25rem;
-    position: relative;
-    gap: 33.12rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-.card_others{
-    text-align: start;
-    position: relative;
-    padding: 1.25rem;
-    margin-left: 9.37rem;
-    margin-right: 9.37rem;
-    background-color: white;
-}
-.card_languages{
-    position: relative;
-    padding: 1.25rem;
-    margin-left: 9.37rem;
-    margin-right: 9.37rem;
-    background-color: white;
-}
-footer{
-    padding-top: 1.006rem;
-    color: white;
+.about-me{
+    line-height: 0.93rem;
     text-align: center;
-    background-color: black;
 }
-.contact_area{
-    color: white;
-    padding: 1.56rem 17.5rem;
-    margin: 0;
-    background-color: black;
+.about-me .i_develop h2{
+    font-family: Onest;
+    font-size: 2rem;
+    font-weight: 250;
 }
-.contact{
-    display: flex;
-    flex-wrap: wrap;
-    gap:15.5rem;
+.bold{
+    font-weight: bold;
+}
+.about-me .i_do{
+    padding-top: 6.25rem;
+    font-family: Onest;
+    font-size: 2.5rem;
+    font-weight: 500;
+    padding-bottom: 1.87rem;
+}
+.profile{
+    margin-top: 3.125rem;
+    margin-right: 0.625rem;
+    border-top: solid #00BC57 0.62rem;
+    border-right: solid #00BC57 0.62rem;
+}
+.about-me{
+    border-bottom: solid #00BC57 0.62rem;
+}
+.last{
+    font-family: Onest;
+    font-size: 2rem;
+    font-weight: 500;
+}
 
-}
-a{
-    text-decoration: underline;
-    color: white;
-}
 .card_area .date{
     font-weight: 300;
     font-size: 1.12rem;
@@ -425,43 +126,80 @@ a{
     font-size:1.5rem;
     font-weight: 500;
 }
-.white_bold{
-    font: Onest;
+.card_area a{
+    font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.25rem;
     color: white;
-    font-weight: bold;
+    font-weight: 450;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    background-color: 00BC57;
+    border-radius: 1.25rem;
+}
+.card_area{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fill,minmax(1fr,1fr));
+}
+.card{
+    cursor: pointer;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 0.625rem;
+
+}
+.card a{
+    display: none;
+}
+.card:nth-child(even){
+   grid-column: 2;
+}
+.card img{
+    width: 200px;
+}
+.body_grey{
+    margin-top: 7.5rem;
+    display: grid;
+    background-color: ECECEC;
+    text-align: center;
 }
 .subtittle{
     font-family: Onest;
     font-weight: 500;
     font-size: 1.8rem;
 }
-.currently{
-    font-size: 1.4rem;
-    font-family: Mooli;
-}
-.course{
+.card_others{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     text-align: start;
-    padding-left: 6.25rem;
-    font-family: Onest;
-    font-weight: 31.25rem;
-    font-size: 1.25rem;
-    line-height: 2rem;
-    color:black;
+    position: relative;
+    padding: 1.25rem;
+    margin-left: 9.37rem;
+    margin-right: 9.37rem;
+    background-color: white;
 }
-.workload_level{
+.card_languages{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1.25rem;
+    margin-left: 9.37rem;
+    margin-right: 9.37rem;
+    margin-bottom: 5rem;
+    background-color: white;
+}
+footer{
+    padding-top: 1.006rem;
+    color: white;
     text-align: center;
-    font-family: Onest;
-    font-weight: 31.25rem;
-    font-size: 1.5rem;
-    color:363636;
+    background-color: black;
 }
-.language{
-    font-family: Onest;
-    font-weight: 31.25rem;
-    font-size: 1.25rem;
-    line-height: 2rem;
-    color:black;
+.body_black{
+    display: grid;
 }
+
 .body_black h1:first-child{
     font-family: Onest;
     font-weight:550;
@@ -479,283 +217,31 @@ a{
     font-size: 1.93rem;
     color: white;
 }
-@media(max-width:1600px){
-    .intro {
-        gap: 0;
-        align-items: start;
-        padding-top: 20px;
-    }
-    .about-me::after {
-        content: "";
-        width: 50rem;
-        height: 0.62rem;
-        background-color: rgb(0, 188, 87);
-        position: absolute;
-        left: 20.55rem;
-        margin-top: 1rem;
-    }
-    .profile img{
-        margin-top: 10px;
-        margin-right: 8px;
-    }
-    .card_area{
-        height: 450px;
-        width: 1276px;
-    }
-    .main_card{
-        margin-left:70px;
-        margin-right:0px;
-        height: 380px;
-        width: 280px;
-    }
-    .course:not(:last-child)::after {
-        top: 4.90rem;
-        content: '';
-        right: 3.55rem;
-        position: absolute;
-        background-color: 8F8F8F;
-        width: 59rem;
-        height: 0.0625rem;
-    }
-    .course{
-        gap:30.9rem;
-    }
-    .body_black{
-        height: 430px;
-    }
-    .contact_area{
-        height: 230px;
-    }
-    footer{
-        padding-top: 0px;
-    }
-    .body_black h1:first-child {
-        line-height: 0px;
-    }
-    .contact_area{
-        line-height: 30px;
-    }
-    .language:not(:last-child)::before {
-        top: 4.90rem;
-        content: '';
-        right: 3.55rem;
-        position: absolute;
-        background-color: 8F8F8F;
-        width: 59rem;
-        height: 0.0625rem;
-    }
-    .card_area .main_card::before {
-        line-height: 0px;
-    }
-    .card{
-        margin-top: 10px;
-        height: 380px;
-        width: 280;
-    }
-    .body_grey {
-        margin-top: 6rem;
-    }
-    .profile{
-        margin-top: 3.125rem;
-        margin-right: 0.625rem;
-        border-top: solid #00BC57 0.62rem;
-        border-right: solid #00BC57 0.62rem;
-    }
-    .header{
-        gap:44.5rem;
-    }
+.body_black a{
+    text-decoration: none;
+    color: white;
 }
-@media(max-width:392px){
-    .nav-bar{
-        justify-content: start;
-    }
-
-    .header img{
-        display: none;
-    }
-    ul{
-        gap:1rem;
-    }
-    ul a{
-        font-size: 16px;
-    }
-    .nav-bar ul li:last-child {
-        margin: 0;
-        margin-top: 0.5rem;
-        padding: 0.5rem 1rem;
-        background-color: 00BC57;
-        border-radius: 1.10rem;
-    }
-
-    .profile img{
-        display: none;
-    }
-    .body_white{
-        justify-items: start;
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-    .body_grey{
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-content: center;
-    }
-    .body_black{
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-    .header {
-        justify-content: start;
-        gap: 0rem;
-    }
-    .intro{
-        grid-template-columns: 1fr;
-    }
-    .intro .img{
-        display: none;
-    }
-    .intro .introduce h1 {
-        font-family: "Onest";
-        line-height: 0.5rem;
-        margin: 2.5rem;
-        font-size: 36px;
-        font-weight: 100;
-    }
-    .i_am {
-        margin-left: 2.5rem;
-        font-family: Mooli;
-        font-size: 16px;
-        line-height: 0px;
-    }
-    .fromBrazil {
-        line-height: 0px;
-        margin: 2.5rem;
-        font-family: Mooli;
-        font-size: 16px;
-    }
-    .about-me .i_do {
-    padding-top: 6.25rem;
-    font-family: Onest;
-    font-size: 36px;
+.course{
     text-align: start;
-    justify-self: start;
-    font-weight: 500;
-    margin-left:5rem;
-    padding-bottom: 1.87rem;
+    font-family: Onest;
+    font-weight: 31.25rem;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    color:black;
 }
-    main img{
-        margin-left: 40px;
-        justify-content: end;
-        width: 250px;
-    }
-    .about-me{
-        display: none;
-    }
-    .subtittle{
-        font-size: 20px;
-    }
-    .currently{
-        display: flex;
-        font-size: 12;
-        align-items: stretch;
-        flex-direction: column;
-    }
-    .last{
-            margin-left: 2.5rem;
-            text-align: start;
-            font-size: 16px;
-    }
-    .card_area{
-        align-content: start;
-        justify-content: center;
-        color: white;
-        text-align: center;
-        display: flex;
-        flex-wrap: wrap;
-        padding-top: 4.5rem;
-        width: 100%;
-        height: 1580px;
-        gap: 30px;
-        background-color: 00BC57;
-        border-radius: 1.25rem;
-    } 
-    .main_card{
-        transform: rotate(0deg);
-        box-shadow: 0 0 3.43rem rgba(0, 0, 0, 0.8);
-        box-shadow: 0.625rem;
-        border-radius: 1.25rem;
-        background-color: 363636;
-        height: 21rem;
-        width: 17rem;
-        margin-left: 0px;
-    }
-
-    .card_area .date{
-        color: white;
-    }
-    .card_area .subtittle{
-        color: 00BC57;
-    }
-    .card_area a{
-        font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-size: 1.25rem;
-        color: white;
-        font-weight: 450;
-        text-decoration: none;
-        padding: 1rem 2rem;
-        background-color: 00BC57;
-        border-radius: 1.25rem;
-    }
-    .card{
-        box-shadow: 0 0 3.43rem rgba(0, 0, 0, 0.8);
-        margin-top: 1.25rem;
-        border-radius: 1.25rem;
-        background-color: 363636;
-        height: 21rem;
-        width: 17rem;
-    }
-
-    .card:nth-child(2) {
-        left: 0rem;
-    }
-    .card:nth-child(3) {
-        left: 0rem;
-    }
-    .card:nth-child(4) {
-        right:0;
-    }
-    .card:last-child{
-        margin-right:0rem;
-    }
-    .card_area .main_card::before{
-        z-index: 2;
-        color: white;
-        left: 0.31rem;
-        content: 'Latest projects';
-        width: 100%;
-        position: absolute;
-        bottom: 24rem;
-        font-family: Onest;
-        font-size: 2rem;
-        font-weight: bolder;
-    }
-    .last{
-        display: none;
-    }
-
-    .card_others{
-        display: none;
-    }
-    .card_languages{
-        display: none;
-    }
-    .contact_area{
-        display: none;
-    }
-    .body_black footer h1{
-        font-size: 1.8rem;
-    }
-    .body_black{
-        display: none;
-    }
+.language{
+    text-align: start;
+    font-family: Onest;
+    font-weight: 31.25rem;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    color:black;
+}
+.currently{
+    font-size: 1.4rem;
+    font-family: Mooli;
+}
+ul li{
+    font-family: Onest;
+    font-size: 1.12rem;
 }
