@@ -12,3 +12,15 @@ function scroll(event){
 links.forEach((item)=>{
     item.addEventListener("click",scroll);
 })
+
+const cards = document.querySelectorAll(".card");
+
+cards.forEach((item)=>{
+    item.addEventListener("click",redirecionar);
+})
+
+function redirecionar(){
+   const link = this.querySelector("a");
+   console.log(link)
+   window.location.href=link;
+}
