@@ -346,11 +346,6 @@ body section.ativo{
     .introduce img{
         padding-left: 2.5rem;
     }
-    body{
-        width: 400px;
-        margin: 0 auto;
-        position: relative;
-    }
     .body_black h1:first-child{
         font-size: 1.6rem;
     }
