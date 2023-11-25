@@ -1,5 +1,5 @@
 body{
-    width: 900px;
+    width: 1200px;
     margin: 0 auto;
     position: relative;
 }
@@ -49,6 +49,9 @@ ul{
 }
 .intro .introduce .bold {
     font-weight:500;
+}
+.introduce{
+    margin-top: 5.8rem;
 }
 .i_am {
     font-family: Mooli;
@@ -110,9 +113,18 @@ ul{
     border-right: solid #00BC57 0.62rem;
 }
 .about-me{
+    margin-top:2rem;
     border-bottom: solid #00BC57 0.62rem;
 }
 .last{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-family: Onest;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.skills{    
+    margin-top: 4rem;
     font-family: Onest;
     font-size: 2rem;
     font-weight: 500;
@@ -167,45 +179,81 @@ ul{
     width: 200px;
 }
 .body_grey{
-    margin-top: 7.5rem;
+    margin-top: 3.5rem;
     display: grid;
-    background-color: ECECEC;
+    background: #ececec;
     text-align: center;
 }
 .subtittle{
     font-family: Onest;
     font-weight: 500;
     font-size: 1.8rem;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.subtittle img{
+    margin-top: 2.625rem;
+    height: 1.875rem;
+    width: 1.875rem;
 }
 .card_others{
-    display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1.25rem 5rem 1.25rem 5rem;
     justify-content: space-between;
     text-align: start;
     position: relative;
-    padding: 1.25rem;
     margin-left: 9.37rem;
     margin-right: 9.37rem;
     background-color: white;
 }
 .card_languages{
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    padding: 1.25rem;
+    padding: 1.25rem 5rem 1.25rem 5rem;
     margin-left: 9.37rem;
     margin-right: 9.37rem;
     margin-bottom: 5rem;
     background-color: white;
 }
+.card_languages .workload_level{
+    grid-column: 2;
+    justify-self: start;
+}
+.card_others .workload_level{
+    grid-column: 2;
+    justify-self: start;
+}
 footer{
     padding-top: 1.006rem;
     color: white;
     text-align: center;
-    background-color: black;
+    background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
 }
-.body_black{
+
+.copyright h1{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: center;
+    font-family: Onest;
+    color: black;
+}
+.body_black .contact_area{
     display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(1fr,1fr));
+    justify-content: center;
+    padding-bottom: 4rem;
+}
+
+.body_black .contact h1{
+    font-size: 1.5rem;
+}
+
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    gap:30px;
 }
 
 .body_black h1:first-child{
@@ -230,20 +278,28 @@ footer{
     color: white;
 }
 .course{
-    text-align: start;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(1fr,1fr));
+    justify-content: space-between;
+    text-align: center;
     font-family: Onest;
     font-weight: 31.25rem;
     font-size: 1.25rem;
     line-height: 2rem;
     color:black;
+    border-bottom: solid 1px rgb(222, 218, 218);
 }
 .language{
-    text-align: start;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(1fr,1fr));
+    justify-content: space-between;
+    text-align: center;
     font-family: Onest;
     font-weight: 31.25rem;
     font-size: 1.25rem;
     line-height: 2rem;
     color:black;
+    border-bottom: solid 1px rgb(222, 218, 218);
 }
 .currently{
     font-size: 1.4rem;
@@ -253,3 +309,16 @@ ul li{
     font-family: Onest;
     font-size: 1.12rem;
 }
+
+body section{
+    opacity: 0;
+    transform: translate3d(-30px,0,0);
+    transition: .3s;
+}
+body section.ativo{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+    transition: .3s;
+}
+@media (max-width: 1250px) {
+  }
