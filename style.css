@@ -1,7 +1,15 @@
 body{
     width: 900px;
     margin: 0 auto;
-
+    position: relative;
+}
+body::before{
+    position: absolute;
+    border: solid 1px black;
+    margin-top: 10px;
+    top:60;
+    content: "THIS WEBSITE IS NOT FINISHED.";
+    color: blue;
 }
 header{
     display: flex;
