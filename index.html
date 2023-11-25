@@ -1,255 +1,157 @@
-body{
-    width: 900px;
-    margin: 0 auto;
-    position: relative;
-}
-body::before{
-    position: absolute;
-    border: solid 1px black;
-    margin-top: 10px;
-    top:60;
-    content: "THIS WEBSITE IS NOT FINISHED.";
-    color: blue;
-}
-header{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.nav-bar ul{
-    display: flex;
-    flex:wrap;
-    gap: 20px;
-}
-.nav-bar ul li:last-child{
-    margin: 0;
-    padding: 1rem 2rem;
-    background-color: 00BC57;
-    border-radius: 1.25rem;
-}
-ul a{
-    text-decoration: none;
-    color: black;
-}
-ul{
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    align-items: center;
-}
-.header{
-    align-content: center;
-}
-.intro .introduce h1 {
-    font-family: "Onest";
-    line-height: 0rem;
-    font-size: 3.2rem;
-    font-weight: 100;
-}
-.intro .introduce .bold {
-    font-weight:500;
-}
-.i_am {
-    font-family: Mooli;
-    font-size: 16px;
-    line-height: 0px;
-}
-.text{
-    line-height: 0.62rem;
-}
-.i_am{
-    font-family: Mooli;
-    font-size: 1.5rem;
-}
-.fromBrazil h2{
-    font-family: Mooli;
-    font-size: 1.5rem;
-}
-.fromBrazil span{
-    color: 00BC57;
-    font-family: Mooli;
-    font-size: 1.5rem;
-}
-.grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
-}
-.profile{
-    align-self: center;
-    justify-self: end;
-    grid-column: 2;
-}
-.profile img{
-    height: 16.75rem;
-    width: 16.75rem;
-}
-.about-me{
-    line-height: 0.93rem;
-    text-align: center;
-}
-.about-me .i_develop h2{
-    font-family: Onest;
-    font-size: 2rem;
-    font-weight: 250;
-}
-.bold{
-    font-weight: bold;
-}
-.about-me .i_do{
-    padding-top: 6.25rem;
-    font-family: Onest;
-    font-size: 2.5rem;
-    font-weight: 500;
-    padding-bottom: 1.87rem;
-}
-.profile{
-    margin-top: 3.125rem;
-    margin-right: 0.625rem;
-    border-top: solid #00BC57 0.62rem;
-    border-right: solid #00BC57 0.62rem;
-}
-.about-me{
-    border-bottom: solid #00BC57 0.62rem;
-}
-.last{
-    font-family: Onest;
-    font-size: 2rem;
-    font-weight: 500;
-}
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portifolio</title>
+    </head>
+    <body>
+        <section class="body_white">
+            <header class="header">
+                <img class="logo" src="/img/img/Marca.svg" alt="">
+                <nav class="nav-bar">
+                 <ul>
+                     <li><a href="#experience">Experience</a></li>
+                     <li><a href="#education">Education</a></li>
+                     <li><a href="#contact">Contact</a></li>
+                 </ul>
+                </nav>
+             </header>
+                <main class="grid">
+                     <section class="grid intro">
+                         <article class="introduce">
+                                <h1>My name is <h1 class="bold">Gustavo</h1></h1>
+                            <div class="text">
+                                <h2 class="i_am">I am a Computer Science student</h2>
+                                   <div class="fromBrazil">
+                                       <h2>from <span>Brazil</span><span>.</span></h2>
+                                   </div>
+                            </div>
+                                <img src="/img/img/icons.png" alt="">
+                         </article>
+                         <div class="profile">
+                             <img src="/img/img/perfil.jpg" alt="profile" height="100px" width="100px">
+                         </div>
+                     </section>
+                     <article class="about-me">
+                         <h1 class="i_do">What I do?</h1>
+                            <div class="i_develop">
+                                <h2>I develop webSites and apps from <span class="bold">UX/UI</h2><h2></span>Design to <span class="bold">front</span> and <span class="bold">backend.</span></h2>
+                            </div>
+                     </article>
+                     <h1 class="last" id="experience" >Latest projects</h1>
+                     <section class="card_area">
+                         <div class="card">
+                             <h1 class="date">Oct,18,2023</h1>
+                             <h1 class="sub_tittle">Bike advanced template</h1>
+                             <h1 class="desc">I created Bikestore website template </h1>
+                             <a href="/bikcraft-final/index.html">SEE</a>
+                             <img src="img/img/rating stars.webp" alt="">
+                         </div>
+                         <div class="card">
+                            <h1 class="date">Dez,01,2022</h1>
+                            <h1 class="sub_tittle">Fantastic Animals</h1>
+                            <h1 class="desc">HTML,JS,CSS</h1>
+                            <a href="/animais-fantasticos/index.html">SEE</a>
+                            <img src="img/img/rating stars.webp" alt="">
+                        </div>
+                         <div class="card">
+                             <h1 class="date">Nov,02,2023</h1>
+                             <h1 class="sub_tittle">FlexBox</h1>
+                             <h1 class="desc">I create a Website usind only FlexBox</h1>
+                             <a href="/flexblog/index.html">SEE</a>
+                             <img src="img/img/rating stars.webp" alt="">
+                         </div>
+                         <div class="card">
+                            <h1 class="date">Nov,13,2023</h1>
+                            <h1 class="sub_tittle">Wildbeast</h1>
+                            <h1 class="desc">I create a Website usind only display:grid</h1>
+                            <a href="./wildbeast/index.html">SEE</a>
+                            <img src="img/img/rating stars.webp" alt="">
+                        </div>
+                        <div class="card">
+                            <h1 class="date">Sep,28,2023</h1>
+                            <h1 class="sub_tittle">Bike basic template</h1>
+                            <h1 class="desc">I created Bikestore website basic template </h1>
+                            <a href="/web-final/index.html"></a>
+                            <img src="img/img/rating stars.webp" alt="">
+                        </div>
 
-.card_area .date{
-    font-weight: 300;
-    font-size: 1.12rem;
-    font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-.card_area .sub_tittle{
-    color: 00BC57;
-    font-size: 1.5rem;
-    font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-.card_area .desc{
-    padding-bottom: 0px;
-    font-family: Onest;
-    font-size:1.5rem;
-    font-weight: 500;
-}
-.card_area a{
-    font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1.25rem;
-    color: white;
-    font-weight: 450;
-    text-decoration: none;
-    padding: 1rem 2rem;
-    background-color: 00BC57;
-    border-radius: 1.25rem;
-}
-.card_area{
-    display: grid;
-    gap: 30px;
-    grid-template-columns: repeat(auto-fill,minmax(1fr,1fr));
-}
-.card{
-    cursor: pointer;
-    text-align: center;
-    padding: 20px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-    border-radius: 0.625rem;
-
-}
-.card a{
-    display: none;
-}
-.card:nth-child(even){
-   grid-column: 2;
-}
-.card img{
-    width: 200px;
-}
-.body_grey{
-    margin-top: 7.5rem;
-    display: grid;
-    background-color: ECECEC;
-    text-align: center;
-}
-.subtittle{
-    font-family: Onest;
-    font-weight: 500;
-    font-size: 1.8rem;
-}
-.card_others{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    text-align: start;
-    position: relative;
-    padding: 1.25rem;
-    margin-left: 9.37rem;
-    margin-right: 9.37rem;
-    background-color: white;
-}
-.card_languages{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 1.25rem;
-    margin-left: 9.37rem;
-    margin-right: 9.37rem;
-    margin-bottom: 5rem;
-    background-color: white;
-}
-footer{
-    padding-top: 1.006rem;
-    color: white;
-    text-align: center;
-    background-color: black;
-}
-.body_black{
-    display: grid;
-}
-
-.body_black h1:first-child{
-    font-family: Onest;
-    font-weight:550;
-    color: white;
-}
-.body_black h1{
-    font-family: Onest;
-    font-weight: 250;
-    font-size: 1.93rem;
-    color: white;
-}
-.body_black h1{
-    font-family: Onest;
-    font-weight: 250;
-    font-size: 1.93rem;
-    color: white;
-}
-.body_black a{
-    text-decoration: none;
-    color: white;
-}
-.course{
-    text-align: start;
-    font-family: Onest;
-    font-weight: 31.25rem;
-    font-size: 1.25rem;
-    line-height: 2rem;
-    color:black;
-}
-.language{
-    text-align: start;
-    font-family: Onest;
-    font-weight: 31.25rem;
-    font-size: 1.25rem;
-    line-height: 2rem;
-    color:black;
-}
-.currently{
-    font-size: 1.4rem;
-    font-family: Mooli;
-}
-ul li{
-    font-family: Onest;
-    font-size: 1.12rem;
-}
+                         <!-- <div class="arrow">
+                            <a href="/"><img src="img/icons/arrow.svg" alt=""></a>
+                         </div> -->
+                     </section>
+        </section>
+                <section class="body_grey">
+                    <section class="info">
+                        <section class="subtittle" id="education">
+                            <h1>Education</h1>
+                            <img src="/img/icons/education.svg" alt="education_icon">
+                        </section>
+                        <div class="currently">
+                            <h1>I'm currently studying Computer Science at PUC-PR,
+                                <h1>i joined in 2022 and i will graduate in 2025</h1></h1>
+                        </div>
+                        <section class="subtittle">
+                            <h1>Others</h1>
+                            <img src="/img/icons/others.svg" alt="book_icon">
+                        </section>
+                            <div class="card_others">
+                                <div class="course">
+                                    <h1>Ux Design & UI Design</h1>
+                                    <h1 class="workload_level">56h</h1>
+                                </div>
+                                <div class="course">
+                                    <h1>Git & Git Hub</h1>
+                                    <h1 class="workload_level">08h</h1>
+                                </div>
+                                <div class="course">
+                                    <h1>Excel,PowerPoint, Word</h1>
+                                    <h1 class="workload_level">50h</h1>
+                                </div>
+                            </div>
+                        <section class="subtittle">
+                            <h1>Languages</h1>
+                            <img src="/img/icons/languages.svg" alt="languages_icon">
+                        </section>
+                            <div class="card_languages">
+                                <div class="language">
+                                    <h1>English</h1>
+                                    <h1 class="workload_level">Advanced</h1>
+                                </div>
+                                <div class="language">
+                                    <h1>Spanish</h1>
+                                    <h1 class="workload_level">Basic</h1>
+                                </div>
+                                <div class="language">
+                                    <h1>Portuguese</h1>
+                                    <h1 class="workload_level">Native</h1>
+                                </div>
+                            </div>
+                    </section>
+               </main>
+            </section>
+              <section class="body_black">
+                <footer>
+                    <h1>Contact me</h1>
+                </div>
+                <div class="contact_area">
+                    <div class="contact" id="contact">
+                        <img src="/img/icons/email.svg" alt="email_icon">
+                        <h1>gu.coradin10@gmail.com</h1>
+                    </div>
+                    <div class="contact">
+                        <img src="/img/icons/phone.svg" alt="phone_icon">
+                        <h1>55 41 992321451</h1>
+                    </div>
+                   <div class="contact">
+                    <img src="/img/icons/linkedin.svg" alt="linkedin_icon">
+                    <h1><a href="https://www.linkedin.com/in/gu-guadagnin/">www.linkedin.com/gu-guadagnin/</a>
+                    </h1>
+                   </div>
+                </div>
+               </footer>
+              </section>
+                <script src="index.js"></script>
+    </body>
+</html>
