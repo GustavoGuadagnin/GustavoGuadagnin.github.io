@@ -27,12 +27,15 @@ function animaScroll(){
         if(sectionTop<0){
             section.classList.add("ativo")
         }
-    })
-}
+     })
+ }
+
+ if(window.innerWidth>700){
+     let valor = 1
+     const menu = document.querySelector(".menu");
+     const nav_bar = document.querySelector(".barra-menu");
 if(window.innerWidth>700){
-    let valor = 1
-    const menu = document.querySelector(".menu");
-    const nav_bar = document.querySelector(".barra-menu");
+  
     const close = document.querySelector(".close");
     const li = nav_bar.querySelectorAll("li");
     const cards = document.querySelectorAll(".card");
@@ -72,45 +75,41 @@ if(window.innerWidth>700){
         nav_bar.classList.toggle("inativo")
     }
     cards.forEach((item)=>{
-        item.addEventListener("mouseover",onMouseOver);
-        item.addEventListener("mouseout",onMouseOver);
-    })
-    
-    function onMouseOver(){
-        const h1 = this.querySelector(".sub_tittle");
+         item.addEventListener("mouseover",onMouseOver);
+         item.addEventListener("mouseout",onMouseOver);
+     })
+
+
+     function onMouseOver(){
+         const h1 = this.querySelector(".sub_tittle");
+if(window.innerWidth>700){
+  
         this.querySelector("img:last-child").setAttribute("src","/img/img/"+h1.innerHTML+".png");
         this.querySelector("img:last-child").classList.toggle("inativo");
         this.querySelector(".preview-text").classList.toggle("inativo");
-    }
-}
-//mobile
+
+     }
+ }
+
+ //mobile
+ if(window.innerWidth<700){
+     let valor = 1
+     const ul = document.querySelectorAll(".nav-bar ul li");
+     const menu = document.querySelector(".menu");
 if(window.innerWidth<700){
-    let valor = 1
-    const ul = document.querySelectorAll(".nav-bar ul li");
-    const menu = document.querySelector(".menu");
+  
     const nav_bar = document.querySelector(".barra-menu");
     const close = document.querySelector(".close");
     const li = nav_bar.querySelectorAll("li");
     const cards = document.querySelectorAll(".card");
     const botao = document.querySelector(".verMais");
-     const botaoVerMenos = document.querySelector(".verMenos");
-     const body = document.querySelector("body");
-     body.addEventListener("click",teste)
-     if(cards.length>2){
-         botao.classList.remove("inativo");
-     }
-     function teste(event){
-
-    
-          
-            
-    
-
-          
-          Expand Down
-    
-    
-  
+    const botaoVerMenos = document.querySelector(".verMenos");
+    const body = document.querySelector("body");
+    body.addEventListener("click",teste)
+    if(cards.length>2){
+        botao.classList.remove("inativo");
+    }
+    function teste(event){
         if(event.pageX>250){
             nav_bar.classList.add("inativo")
         }
@@ -124,15 +123,18 @@ if(window.innerWidth<700){
             })
         }
     }
-    cardsVisiveis(valor)
-    menu.classList.remove("inativo");
-    menu.addEventListener("click",mostrar)
-    botao.addEventListener("click",carregar);
-    close.addEventListener("click",mostrar)
-    botaoVerMenos.addEventListener("click",esconder);
-    function carregar(){
-        cardsVisiveis(valor);
-        valor++;
+     cardsVisiveis(valor)
+     menu.classList.remove("inativo");
+
+     menu.addEventListener("click",mostrar)
+     botao.addEventListener("click",carregar);
+     close.addEventListener("click",mostrar)
+     botaoVerMenos.addEventListener("click",esconder);
+     function carregar(){
+         cardsVisiveis(valor);
+         valor++;
+if(window.innerWidth<700){
+  
         if(valor>1){
             botao.innerHTML="MORE";
             botaoVerMenos.classList.remove("inativo");
@@ -142,17 +144,23 @@ if(window.innerWidth<700){
         valor = 1;
         cardsVisiveis(valor);
         botao.innerHTML="MORE PROJECTS";
-        botaoVerMenos.classList.add("inativo");
-    }
-    function mostrar(){
-        nav_bar.classList.toggle("inativo")
-    }
+         botaoVerMenos.classList.add("inativo");
+     }
+
+
+     function mostrar(){
+         nav_bar.classList.toggle("inativo")
+     }
+if(window.innerWidth<700){
+  
     ul.forEach((li)=>{
         li.classList.add("inativo");
     })
     li.forEach((item)=>{
         item.addEventListener("click",mostrar);
-    })
-}
-animaScroll();
-window.addEventListener("scroll",animaScroll)
+     })
+
+ }
+
+ animaScroll();
+ window.addEventListener("scroll",animaScroll)
