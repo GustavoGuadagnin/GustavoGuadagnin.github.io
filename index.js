@@ -165,4 +165,4 @@ function atualizarPagina(){
 }
 animaScroll();
 window.addEventListener("scroll",animaScroll);
-window.addEventListener("resize",atualizarPagina);
+// window.addEventListener("resize",atualizarPagina);
