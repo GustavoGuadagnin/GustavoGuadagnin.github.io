@@ -1,20 +1,79 @@
 body{
-    max-width: 1200px;
+    max-width: 75rem;
     margin: 0 auto;
     position: relative;
 }
-/* body::before{
+header .menu{
+    height: 3rem;
+    width: 3rem;
+}
+.preview{
+    top: 0;
+    left: 0;
     position: absolute;
-    border: solid 1px black;
-    margin-top: 10px;
-    top:60;
-    content: "THIS WEBSITE IS NOT FINISHED.";
-    color: blue;
-} */
+    z-index: 2000;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+.preview-text{
+    font-weight: 500;
+    font-size: 1.12rem;
+    font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: absolute;
+    top: -45;
+    color: #00BC57;
+    font-style: italic;
+}
 header{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+.close{
+    position: absolute;
+    right:-12;
+    top: -12;
+    border: solid 2px black;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.barra-menu{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+.barra-menu ul{
+    align-items: start;
+    padding-top: 3rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    z-index: 2000;
+    background-color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top:-9;
+    width: 50%;
+    height: 100%;
+}
+.verMaisGrid{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.verMaisGrid .verMais{
+    max-height: 2rem;
+}
+.verMaisGrid .verMenos{
+    
+    max-height: 2rem;
+}
+.inativo{
+    display: none;
+}
+.ativo{
+
+    display: block;
 }
 .nav-bar ul{
     display: flex;
@@ -55,8 +114,8 @@ ul{
 }
 .i_am {
     font-family: Mooli;
-    font-size: 16px;
-    line-height: 0px;
+    font-size: 1rem;
+    line-height: 0rem;
 }
 .text{
     line-height: 0.62rem;
@@ -86,6 +145,8 @@ ul{
 .profile img{
     height: 16.75rem;
     width: 16.75rem;
+    border-bottom: solid 2px green;
+    border-radius: 50%;
 }
 .about-me{
     line-height: 0.93rem;
@@ -141,7 +202,7 @@ ul{
     font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .card_area .desc{
-    padding-bottom: 0px;
+    padding-bottom: 0rem;
     font-family: Onest;
     font-size:1.5rem;
     font-weight: 500;
@@ -158,13 +219,14 @@ ul{
 }
 .card_area{
     display: grid;
-    gap: 30px;
+    gap: 1.875rem;
     grid-template-columns: repeat(auto-fill,minmax(1fr,1fr));
 }
 .card{
+    position: relative;
     cursor: pointer;
     text-align: center;
-    padding: 20px;
+    padding: 1.25rem;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     border-radius: 0.625rem;
 }
@@ -175,7 +237,7 @@ ul{
    grid-column: 2;
 }
 .card img{
-    width: 200px;
+    width: 12.5rem;
 }
 .body_grey{
     margin-top: 3.5rem;
@@ -188,7 +250,7 @@ ul{
     font-weight: 500;
     font-size: 1.8rem;
     display: flex;
-    gap: 20px;
+    gap: 1.25rem;
     justify-content: center;
 }
 .subtittle img{
@@ -252,7 +314,7 @@ footer{
 .contact{
     display: flex;
     flex-wrap: wrap;
-    gap:30px;
+    gap:1.875rem;
 }
 
 .body_black h1:first-child{
@@ -319,50 +381,62 @@ body section.ativo{
     transform: translate3d(0,0,0);
     transition: .3s;
 }
-
+@media(max-width:1200px){
+    .barra-menu ul{
+        align-items: start;
+        padding-top: 3rem;
+        margin-top: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        z-index: 2000;
+        background-color: white;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        position: fixed;
+        top:-14;
+        width: 30%;
+        height: 100vh;
+    }
+}
 @media (max-width: 800px) {
     header{
         margin-top: 2rem;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center
+        justify-content: center;
     }
     header img{
         margin-top: 1rem;
     }
+
+
+    #foto .profile {
+        border:none;
+        margin-bottom: 2rem;
+    }
+    .profile {
+        align-self: center;
+        justify-self: center;
+        grid-column: 1;
+        grid-row: 1;
+    }
+
     .intro .introduce h1 {
         font-family: "Onest";
         line-height: 0rem;
-        font-size: 2.5rem;
+        font-size: 2.8rem;
         font-weight: 100;
-        text-align: center;
     }
-    .text h2{
-        text-align: center;
-    }
-    .text{
-        padding-bottom: 1.8rem;
+    .introduce{
+        margin-top: 0rem;
     }
     .introduce img{
-        padding-left: 2.5rem;
-    }
-    .body_black h1:first-child{
-        font-size: 1.6rem;
-    }
-    .subtittle{
-        font-size: 1.5rem;
-    }
-    .subtittle img {
-        margin-top: 2.3rem;
-        height: 1.5rem;
-        width: 1.5rem;
+        margin-top: 2rem;
     }
     .grid{
         display: grid;
         grid-template-columns: 1fr;
-    }
-    .profile img{
-        display: none;
+        grid-template-rows: auto;
     }
     .body_black .contact_area{
         display: grid;
@@ -373,7 +447,7 @@ body section.ativo{
     .card_area{
         display: flex;
         flex-wrap: wrap;
-        gap: 30px;
+        gap: 1.875rem;
     }
     .body_grey {
         margin-top: 3.5rem;
@@ -382,23 +456,35 @@ body section.ativo{
         text-align: center;
         justify-content: center;
     }
-    .contact img{
-        margin-left: 20px;
-        max-width: 100%;
+    .header{
+        justify-content: space-between;
+        align-content: top;
     }
-    .body_black .contact h1 {
-        font-size: large;
-    }
-    .contact h1 a{
-        font-size: large;
-    }
-    .language h1{
-        font-size: large;
+    .language{
+        gap: 3rem;
     }
     .course h1{
-        font-size: large;
+        font-size: 1.4rem;
+
     }
-    .card_others{
+    .course,.language{
+        gap:3.125rem;
+    }
+    .language h1{
+        font-size: 1.4rem;
+    }
+    .card_others {
+        margin-left: 0; 
+        margin-right: 0;
+        justify-content: space-between;
+        padding: 1.25rem 5rem 1.25rem 5rem;
+        justify-content: space-between;
+        text-align: start;
+        position: relative;
+    }
+    .card_languages{
+        margin-left: 0; 
+        margin-right: 0;
         justify-content: space-between;
         padding: 1.25rem 5rem 1.25rem 5rem;
         justify-content: space-between;
@@ -406,72 +492,50 @@ body section.ativo{
         position: relative;
         background-color: white;
     }
-    .currently h1{
-        text-align: center;
-        font-size: 1rem;
-    }
-    .card_languages{
-        justify-content: space-between;
-        padding: 1.25rem 5rem 1.25rem 5rem;       
-        margin-bottom: 5rem;
-        background-color: white;
-    }
-    .course{
-    display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(1fr,1fr));
-    justify-content: space-between;
-    text-align: center;
-    font-family: Onest;
-    font-weight: 31.25rem;
-    font-size: 1.25rem;
-    line-height: 2rem;
-    color:black;
-    border-bottom: solid 1px rgb(222, 218, 218);
-    gap: 90px;
-}
-    .language{
-        display: grid;
-        grid-template-columns: repeat(auto-fill,minmax(1fr,1fr));
-        justify-content: space-between;
-        text-align: center;
-        font-family: Onest;
-        font-weight: 31.25rem;
-        font-size: 1.25rem;
-        line-height: 2rem;
-        color:black;
-        border-bottom: solid 1px rgb(222, 218, 218);
-    }
-    .about-me .i_develop h2{
-        font-size: 1.5rem;
-    }
-    .introduce{
-        margin-top: 0;
-    }
-    .header img{
-        display: none;
-    }
-    .about-me{
-        line-height: normal;
-        margin-top: 0;
-        align-self: start;
-    }
-    .i_am {
-        font-family: Mooli;
+    .body_black .contact h1 {
         font-size: 1.4rem;
     }
-    .about-me .i_do {
-        padding-top: 6.25rem;
-        font-family: Onest;
-        font-size: 2.5rem;
-        font-weight: 500;
-        padding-bottom: 1.87rem;
+    .contact h1 a {
+        font-size: 1.2rem;
+    }
+    .contact img{
+        align-self: center;
+        margin-left: 0.5rem;
+        height: 1.56rem;
+        width: 1.56rem;
+    }
+    body{
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+    .text h2,span{
+        font-size: larger;
+        font-size: 1.4rem;
+    }
+    .text .fromBrazil span{
+        font-size: larger;
+        font-size: 1.4rem;
+    }
+    .about-me .i_do{
+        padding-top: 1rem;
+    }
+    .i_develop h2 {
+        padding-left: 0.5rem;
+        display: inline;
+        line-height: 1;
+        font-size: 1.7rem !important;
+    }
+    .i_develop .bold{
+        font-size: 1.7rem
+    }
+    .i_develop{
+        margin-bottom: 2rem;
     }
     .card{
-        cursor: pointer;
-        text-align: center;
-        padding: 20px;
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-        border-radius: 0.625rem;
+        min-width: 330px;
+        max-width: 330px;
     }
-
+    .currently h1{
+        font-size: 1.6rem;
+    }
 }
