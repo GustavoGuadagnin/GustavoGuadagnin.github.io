@@ -11,7 +11,7 @@ header .menu{
     top: 0;
     left: 0;
     position: absolute;
-    z-index: 2000;
+    z-index: 2;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
 }
@@ -48,7 +48,7 @@ header{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    z-index: 2000;
+    z-index: 3;
     background-color: white;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     position: fixed;
@@ -389,12 +389,12 @@ body section.ativo{
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        z-index: 2000;
+        z-index: 2;
         background-color: white;
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
         position: fixed;
         top:-14;
-        width: 30%;
+        width: 60%;
         height: 100vh;
     }
 }
