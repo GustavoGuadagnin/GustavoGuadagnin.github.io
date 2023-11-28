@@ -3,7 +3,7 @@ body{
     margin: 0 auto;
     position: relative;
 }
-header .menu img{
+header .menu{
     height: 3rem;
     width: 3rem;
 }

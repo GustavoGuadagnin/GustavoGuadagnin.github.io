@@ -62,7 +62,6 @@ if(window.innerWidth>=700){
     close.addEventListener("click",mostrar)
     botaoVerMenos.addEventListener("click",esconder);
     function carregar(){
-        console.log("top")
         cardsVisiveis(valor);
         valor++;
         if(valor>1){
@@ -78,9 +77,7 @@ if(window.innerWidth>=700){
         botaoVerMenos.classList.add("inativo");
     }
 
-    function mostrar(event){
-        event.preventDefault()
-        console.log("top")
+    function mostrar(){
         nav_bar.classList.toggle("inativo")
     }
 
@@ -130,10 +127,10 @@ else{
     cardsVisiveis(valor)
     menu.classList.remove("inativo");
 
-    menu.addEventListener("click",mostrar)
-    botao.addEventListener("click",carregar);
-    close.addEventListener("click",mostrar)
-    botaoVerMenos.addEventListener("click",esconder);
+    menu.addEventListener("touchstart",mostrar)
+    botao.addEventListener("touchstart",carregar);
+    close.addEventListener("touchstart",mostrar)
+    botaoVerMenos.addEventListener("touchstart",esconder);
     function carregar(){
         cardsVisiveis(valor);
         valor++;
@@ -150,9 +147,7 @@ else{
         botaoVerMenos.classList.add("inativo");
     }
 
-    function mostrar(event){
-        event.preventDefault();
-        alert("top")
+    function mostrar(){
         nav_bar.classList.toggle("inativo")
     }
 
