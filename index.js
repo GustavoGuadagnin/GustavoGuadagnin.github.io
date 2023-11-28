@@ -109,7 +109,7 @@ if(window.innerWidth<700){
     const botaoVerMenos = document.querySelector(".verMenos");
     const body = document.querySelector("body");
     body.addEventListener("click",teste)
-    if(cards.length>3){
+    if(cards.length>2){
         botao.classList.remove("inativo");
     }
     function teste(event){
