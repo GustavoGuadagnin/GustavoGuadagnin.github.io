@@ -62,6 +62,7 @@ if(window.innerWidth>=700){
     close.addEventListener("click",mostrar)
     botaoVerMenos.addEventListener("click",esconder);
     function carregar(){
+        console.log("top")
         cardsVisiveis(valor);
         valor++;
         if(valor>1){
@@ -77,7 +78,9 @@ if(window.innerWidth>=700){
         botaoVerMenos.classList.add("inativo");
     }
 
-    function mostrar(){
+    function mostrar(event){
+        event.preventDefault()
+        console.log("top")
         nav_bar.classList.toggle("inativo")
     }
 
