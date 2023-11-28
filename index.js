@@ -1,3 +1,4 @@
+console.log("teste")
 const links = document.querySelectorAll("a[href^='#']");
 function scroll(event){
     event.preventDefault();
