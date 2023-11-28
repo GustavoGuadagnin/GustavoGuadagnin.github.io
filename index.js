@@ -35,7 +35,7 @@ function animaScroll(){
     })
 }
 
-if(window.innerWidth>700){
+if(window.innerWidth>=700){
     let valor = 1
     const menu = document.querySelector(".menu");
     const nav_bar = document.querySelector(".barra-menu");
@@ -85,7 +85,6 @@ if(window.innerWidth>700){
         item.addEventListener("mouseover",onMouseOver);
         item.addEventListener("mouseout",onMouseOver);
     })
-
     
     function onMouseOver(){
         const h1 = this.querySelector(".sub_tittle");
@@ -95,9 +94,7 @@ if(window.innerWidth>700){
 
     }
 }
-
-//mobile
-if(window.innerWidth<700){
+else{
     let valor = 1
     const ul = document.querySelectorAll(".nav-bar ul li");
     const menu = document.querySelector(".menu");
@@ -130,10 +127,10 @@ if(window.innerWidth<700){
     cardsVisiveis(valor)
     menu.classList.remove("inativo");
 
-    menu.addEventListener("click",mostrar)
-    botao.addEventListener("click",carregar);
-    close.addEventListener("click",mostrar)
-    botaoVerMenos.addEventListener("click",esconder);
+    menu.addEventListener("touchstart",mostrar)
+    botao.addEventListener("touchstart",carregar);
+    close.addEventListener("touchstart",mostrar)
+    botaoVerMenos.addEventListener("touchstart",esconder);
     function carregar(){
         cardsVisiveis(valor);
         valor++;
@@ -150,7 +147,6 @@ if(window.innerWidth<700){
         botaoVerMenos.classList.add("inativo");
     }
 
-
     function mostrar(){
         nav_bar.classList.toggle("inativo")
     }
@@ -164,7 +160,9 @@ if(window.innerWidth<700){
     })
 
 }
-
+function atualizarPagina(){
+    location.reload();
+}
 animaScroll();
-window.addEventListener("scroll",animaScroll)
-
+window.addEventListener("scroll",animaScroll);
+window.addEventListener("resize",atualizarPagina);
