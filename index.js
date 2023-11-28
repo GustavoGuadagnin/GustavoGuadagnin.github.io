@@ -130,10 +130,10 @@ else{
     cardsVisiveis(valor)
     menu.classList.remove("inativo");
 
-    menu.addEventListener("touchstart",mostrar)
-    botao.addEventListener("touchstart",carregar);
-    close.addEventListener("touchstart",mostrar)
-    botaoVerMenos.addEventListener("touchstart",esconder);
+    menu.addEventListener("click",mostrar)
+    botao.addEventListener("click",carregar);
+    close.addEventListener("click",mostrar)
+    botaoVerMenos.addEventListener("click",esconder);
     function carregar(){
         cardsVisiveis(valor);
         valor++;
@@ -150,7 +150,9 @@ else{
         botaoVerMenos.classList.add("inativo");
     }
 
-    function mostrar(){
+    function mostrar(event){
+        event.preventDefault();
+        alert("top")
         nav_bar.classList.toggle("inativo")
     }
 
