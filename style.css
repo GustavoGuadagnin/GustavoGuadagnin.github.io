@@ -253,6 +253,7 @@ ul{
     gap: 1.25rem;
     justify-content: center;
 }
+
 .subtittle img{
     margin-top: 2.625rem;
     height: 1.875rem;
@@ -363,6 +364,7 @@ footer{
     border-bottom: solid 1px rgb(222, 218, 218);
 }
 .currently{
+    color: rgb(70, 69, 69);
     font-size: 1.4rem;
     font-family: Mooli;
 }
@@ -382,6 +384,9 @@ body section.ativo{
     transition: .3s;
 }
 @media(max-width:1200px){
+    .subtittle h1{
+        font-weight: 500;
+    }
     .barra-menu ul{
         align-items: start;
         padding-top: 3rem;
@@ -398,7 +403,17 @@ body section.ativo{
         height: 100vh;
     }
 }
-@media (max-width: 800px) {
+.course h1{
+    font-weight: 300;
+    font-size: 1.4rem;
+
+}
+.language h1{
+    font-weight: 300;
+    font-size: 1.4rem;
+
+}
+@media (max-width: 700px) {
     header{
         margin-top: 2rem;
         display: flex;
@@ -408,7 +423,6 @@ body section.ativo{
     header img{
         margin-top: 1rem;
     }
-
 
     #foto .profile {
         border:none;
@@ -464,6 +478,7 @@ body section.ativo{
         gap: 3rem;
     }
     .course h1{
+        font-weight: 300;
         font-size: 1.4rem;
 
     }
@@ -471,6 +486,7 @@ body section.ativo{
         gap:3.125rem;
     }
     .language h1{
+        font-weight: 300;
         font-size: 1.4rem;
     }
     .card_others {
@@ -537,5 +553,6 @@ body section.ativo{
     }
     .currently h1{
         font-size: 1.6rem;
+        font-weight: lighter;
     }
 }
