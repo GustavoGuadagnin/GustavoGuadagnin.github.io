@@ -100,6 +100,17 @@ if(window.innerWidth<700){
          botao.classList.remove("inativo");
      }
      function teste(event){
+
+    
+          
+            
+    
+
+          
+          Expand Down
+    
+    
+  
         if(event.pageX>250){
             nav_bar.classList.add("inativo")
         }
