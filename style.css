@@ -3,6 +3,11 @@ body{
     margin: 0 auto;
     position: relative;
 }
+.teste1{
+    height: 50px;
+    width: 50px;
+    z-index: 5000;
+}
 header .menu{
     height: 3rem;
     width: 3rem;
