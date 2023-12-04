@@ -29,20 +29,12 @@ header{
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.close img{
-    height: 35px;
-    width: 35px;
-    right:-12;
-    top: -8;
-    border: solid 2px black;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-}
 .close{
     position: absolute;
-    height: 35px;
-    width: 35px;
     right:-12;
-    top: -5;
+    top: -12;
+    border: solid 2px black;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 .barra-menu{
     position: relative;
@@ -563,15 +555,4 @@ body section.ativo{
         font-size: 1.6rem;
         font-weight: lighter;
     }
-}
-button{
-    background-color: white;
-    border: none;
-    position: relative;
-}
-button img{
-    top: 0px;
-    position: absolute;
-    height: 40px;
-    width: 40px;
 }
