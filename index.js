@@ -123,14 +123,19 @@ else{
             })
         }
     }
+    function testeF(){
+        alert("a")
+    }
+    const imgTeste = document.querySelector(".teste1");
+    imgTeste.addEventListener("click",testeF)
 
     cardsVisiveis(valor)
     menu.classList.remove("inativo");
 
-    menu.addEventListener("click",mostrar)
-    botao.addEventListener("click",carregar);
-    close.addEventListener("click",mostrar)
-    botaoVerMenos.addEventListener("click",esconder);
+    menu.addEventListener("touchstart",mostrar)
+    botao.addEventListener("touchstart",carregar);
+    close.addEventListener("touchstart",mostrar)
+    botaoVerMenos.addEventListener("touchstart",esconder);
     function carregar(){
         cardsVisiveis(valor);
         valor++;
