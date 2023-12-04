@@ -151,13 +151,13 @@ else{
         nav_bar.classList.toggle("inativo")
     }
 
-    ul.forEach((li)=>{
-        li.classList.add("inativo");
-    })
+    // ul.forEach((li)=>{
+    //     li.classList.add("inativo");
+    // })
 
-    li.forEach((item)=>{
-        item.addEventListener("click",mostrar);
-    })
+    // li.forEach((item)=>{
+    //     item.addEventListener("click",mostrar);
+    // })
 
 }
 
