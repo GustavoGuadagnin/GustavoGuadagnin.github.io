@@ -148,16 +148,18 @@ else{
     }
 
     function mostrar(){
+        alert("toppppp")
         nav_bar.classList.toggle("inativo")
+        alert("dps")
     }
 
-    // ul.forEach((li)=>{
-    //     li.classList.add("inativo");
-    // })
+    ul.forEach((li)=>{
+        li.classList.add("inativo");
+    })
 
-    // li.forEach((item)=>{
-    //     item.addEventListener("click",mostrar);
-    // })
+    li.forEach((item)=>{
+        item.addEventListener("click",mostrar);
+    })
 
 }
 
