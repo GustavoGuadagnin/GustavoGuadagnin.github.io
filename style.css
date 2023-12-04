@@ -19,7 +19,7 @@ header .menu{
 .preview-text{
     font-weight: 500;
     font-size: 1.12rem;
-    font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Roboto', sans-serif;
     position: absolute;
     top: -45;
     color: #00BC57;
@@ -32,10 +32,10 @@ header{
 }
 .close{
     position: absolute;
-    right:-12;
-    top: -12;
-    border: solid 2px black;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    right:0;
+    top: 0;
+    height: 35px;
+    width: 35px;
     z-index: 5000;
 }
 .barra-menu{
@@ -64,13 +64,20 @@ header{
     justify-content: space-around;
 }
 .verMaisGrid .verMais{
+    margin-top: 1.5rem;
+    background-color: #ececec;
+    color: black;
     max-height: 2rem;
     z-index: 5000;
 }
 .verMaisGrid .verMenos{
+    margin-top: 2rem;
+    background-color: #ececec;
+    color: black;
     max-height: 2rem;
     z-index: 5000;
 }
+
 .inativo{
     display: none;
 }
@@ -116,7 +123,7 @@ ul{
     margin-top: 5.8rem;
 }
 .i_am {
-    font-family: Mooli;
+    font-family: 'Mooli', sans-serif;
     font-size: 1rem;
     line-height: 0rem;
 }
@@ -124,16 +131,16 @@ ul{
     line-height: 0.62rem;
 }
 .i_am{
-    font-family: Mooli;
+    font-family: 'Mooli', sans-serif;
     font-size: 1.5rem;
 }
 .fromBrazil h2{
-    font-family: Mooli;
+    font-family: 'Mooli', sans-serif;
     font-size: 1.5rem;
 }
 .fromBrazil span{
     color: 00BC57;
-    font-family: Mooli;
+    font-family: 'Mooli', sans-serif;
     font-size: 1.5rem;
 }
 .grid{
@@ -156,7 +163,7 @@ ul{
     text-align: center;
 }
 .about-me .i_develop h2{
-    font-family: Onest;
+    font-family: 'Onest', sans-serif;
     font-size: 2rem;
     font-weight: 250;
 }
@@ -165,7 +172,7 @@ ul{
 }
 .about-me .i_do{
     padding-top: 6.25rem;
-    font-family: Onest;
+    font-family: 'Onest', sans-serif;
     font-size: 2.5rem;
     font-weight: 500;
     padding-bottom: 1.87rem;
@@ -183,17 +190,17 @@ ul{
 .last{
     margin-top: 3rem;
     margin-bottom: 3rem;
-    font-family: Onest;
-    font-size: 2rem;
-    font-weight: 500;
-}
-.skills{    
-    margin-top: 4rem;
-    font-family: Onest;
+    font-family: 'Onest', sans-serif;
     font-size: 2rem;
     font-weight: 500;
 }
 
+.skills{    
+    margin-top: 4rem;
+    font-family: 'Onest', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+}
 .card_area .date{
     font-weight: 300;
     font-size: 1.12rem;
@@ -201,12 +208,14 @@ ul{
 }
 .card_area .sub_tittle{
     color: 00BC57;
+    font-weight: bolder;
     font-size: 1.5rem;
     font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
 .card_area .desc{
     padding-bottom: 0rem;
-    font-family: Onest;
+    font-family: 'Onest', sans-serif;
     font-size:1.5rem;
     font-weight: 500;
 }
@@ -233,9 +242,7 @@ ul{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     border-radius: 0.625rem;
 }
-.card a{
-    display: none;
-}
+
 .card:nth-child(even){
    grid-column: 2;
 }
@@ -249,7 +256,7 @@ ul{
     text-align: center;
 }
 .subtittle{
-    font-family: Onest;
+    font-family: 'Onest', sans-serif;
     font-weight: 500;
     font-size: 1.8rem;
     display: flex;
@@ -301,7 +308,7 @@ footer{
     font-size: 1.2rem;
     font-weight: 400;
     text-align: center;
-    font-family: Onest;
+    font-family: 'Onest', sans-serif;
     color: black;
 }
 .body_black .contact_area{
@@ -322,18 +329,18 @@ footer{
 }
 
 .body_black h1:first-child{
-    font-family: Onest;
+    font-family: 'Onest', sans-serif;
     font-weight:550;
     color: white;
 }
 .body_black h1{
-    font-family: Onest;
+    font-family: 'Onest', sans-serif;
     font-weight: 250;
     font-size: 1.93rem;
     color: white;
 }
 .body_black h1{
-    font-family: Onest;
+    font-family: 'Onest', sans-serif;
     font-weight: 250;
     font-size: 1.93rem;
     color: white;
@@ -347,7 +354,7 @@ footer{
     grid-template-columns: repeat(auto-fill,minmax(1fr,1fr));
     justify-content: space-between;
     text-align: center;
-    font-family: Onest;
+    font-family: 'Onest', sans-serif;
     font-weight: 31.25rem;
     font-size: 1.25rem;
     line-height: 2rem;
@@ -359,7 +366,7 @@ footer{
     grid-template-columns: repeat(auto-fill,minmax(1fr,1fr));
     justify-content: space-between;
     text-align: center;
-    font-family: Onest;
+    font-family: 'Onest', sans-serif;
     font-weight: 31.25rem;
     font-size: 1.25rem;
     line-height: 2rem;
@@ -369,10 +376,10 @@ footer{
 .currently{
     color: rgb(70, 69, 69);
     font-size: 1.4rem;
-    font-family: Mooli;
+    font-family: 'Mooli', sans-serif;
 }
 ul li{
-    font-family: Onest;
+    font-family: 'Onest', sans-serif;
     font-size: 1.12rem;
 }
 
@@ -439,7 +446,7 @@ body section.ativo{
     }
 
     .intro .introduce h1 {
-        font-family: "Onest";
+        font-family: 'Onest';
         line-height: 0rem;
         font-size: 2.8rem;
         font-weight: 100;
@@ -465,6 +472,7 @@ body section.ativo{
         display: flex;
         flex-wrap: wrap;
         gap: 1.875rem;
+        justify-content: center;
     }
     .body_grey {
         margin-top: 3.5rem;
@@ -551,8 +559,8 @@ body section.ativo{
         margin-bottom: 2rem;
     }
     .card{
-        min-width: 330px;
-        max-width: 330px;
+        width: 250px;
+        height: 300px;
     }
     .currently h1{
         font-size: 1.6rem;
