@@ -3,14 +3,10 @@ body{
     margin: 0 auto;
     position: relative;
 }
-.teste1{
-    height: 50px;
-    width: 50px;
-    z-index: 5000;
-}
 header .menu{
     height: 3rem;
     width: 3rem;
+    z-index: 5000;
 }
 .preview{
     top: 0;
@@ -40,6 +36,7 @@ header{
     top: -12;
     border: solid 2px black;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    z-index: 5000;
 }
 .barra-menu{
     position: relative;
@@ -68,10 +65,11 @@ header{
 }
 .verMaisGrid .verMais{
     max-height: 2rem;
+    z-index: 5000;
 }
 .verMaisGrid .verMenos{
-    
     max-height: 2rem;
+    z-index: 5000;
 }
 .inativo{
     display: none;
