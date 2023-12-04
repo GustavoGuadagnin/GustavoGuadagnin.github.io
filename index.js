@@ -127,10 +127,10 @@ else{
     cardsVisiveis(valor)
     menu.classList.remove("inativo");
 
-    menu.addEventListener("touchstart",mostrar)
-    botao.addEventListener("touchstart",carregar);
-    close.addEventListener("touchstart",mostrar)
-    botaoVerMenos.addEventListener("touchstart",esconder);
+    menu.addEventListener("click",mostrar)
+    botao.addEventListener("click",carregar);
+    close.addEventListener("click",mostrar)
+    botaoVerMenos.addEventListener("click",esconder);
     function carregar(){
         cardsVisiveis(valor);
         valor++;
