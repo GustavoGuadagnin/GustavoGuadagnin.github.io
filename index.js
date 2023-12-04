@@ -44,22 +44,27 @@ const botao = document.querySelector(".verMais");
 const botaoVerMenos = document.querySelector(".verMenos");
 const body = document.querySelector("body");
 
+
 function cardsVisiveis(valor) {
-    if (cards.length >= n * valor) {
-        cards.forEach((item, index) => {
-            if (index >= n * valor) {
-                item.classList.toggle("inativo");
-            }
-        });
-    }
+    cards.forEach((item, index) => {
+        if (index < n * valor) {
+            item.classList.remove("inativo");
+        }else{
+            item.classList.add("inativo");
+        }
+        console.log(valor)
+    });
 }
 
 function carregar() {
-    cardsVisiveis(valor);
     valor++;
+    cardsVisiveis(valor);
     if (valor > 1) {
         botao.innerHTML = "MORE";
         botaoVerMenos.classList.remove("inativo");
+    }
+    if(valor==((cards.length/3).toFixed())){
+        botao.classList.add("inativo")
     }
 }
 
@@ -68,10 +73,22 @@ function esconder() {
     cardsVisiveis(valor);
     botao.innerHTML = "MORE PROJECTS";
     botaoVerMenos.classList.add("inativo");
+    botao.classList.remove("inativo")
 }
 
 function mostrar() {
     nav_bar.classList.toggle("inativo");
+}
+cards.forEach((item)=>{
+    item.addEventListener("mouseover",onMouseOver);
+    item.addEventListener("mouseout",onMouseOver);
+})
+
+function onMouseOver(){
+    const h1 = this.querySelector(".sub_tittle");
+    this.querySelector("img:last-child").setAttribute("src","/img/img/"+h1.innerHTML+".png");
+    this.querySelector("img:last-child").classList.toggle("inativo");
+    this.querySelector(".preview-text").classList.toggle("inativo");
 }
 
 if (window.innerWidth >= 700) {
@@ -112,6 +129,14 @@ if (window.innerWidth >= 700) {
             nav_bar.classList.add("inativo");
         }
     }
+    const ratingImg = document.querySelectorAll(".rating");
+    ratingImg.forEach((item)=>{
+        item.classList.add("inativo");
+    })
+    const see = document.querySelectorAll(".see")
+    see.forEach((item)=>{
+        item.classList.remove("inativo");
+    })
 }
 animaScroll();
 window.addEventListener("scroll", animaScroll);
