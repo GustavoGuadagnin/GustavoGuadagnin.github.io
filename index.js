@@ -79,10 +79,6 @@ function esconder() {
 function mostrar() {
     nav_bar.classList.toggle("inativo");
 }
-cards.forEach((item)=>{
-    item.addEventListener("mouseover",onMouseOver);
-    item.addEventListener("mouseout",onMouseOver);
-})
 
 function onMouseOver(){
     const h1 = this.querySelector(".sub_tittle");
@@ -92,6 +88,13 @@ function onMouseOver(){
 }
 
 if (window.innerWidth >= 700) {
+
+    cards.forEach((item)=>{
+        item.addEventListener("mouseover",onMouseOver);
+        item.addEventListener("mouseout",onMouseOver);
+        item.addEventListener("click",redirecionar)
+    })
+
     n = 6;
     valor = 1;
     cardsVisiveis(valor);
