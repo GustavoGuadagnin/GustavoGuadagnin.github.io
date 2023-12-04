@@ -123,11 +123,6 @@ else{
             })
         }
     }
-    function testeF(){
-        alert("a")
-    }
-    const imgTeste = document.querySelector(".teste1");
-    imgTeste.addEventListener("click",testeF)
 
     cardsVisiveis(valor)
     menu.classList.remove("inativo");
