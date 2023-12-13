@@ -1,4 +1,33 @@
 import './avataars.js';
+//scroll suave para mobile
+
+function scroll(event) {
+    event.preventDefault();
+    const body = document.querySelector("body");
+    body.scrollIntoView({
+        block: 'start',
+        behavior: "smooth",
+    });
+}
+const cards = document.querySelectorAll(".card");
+let n;
+
+function redirecionar() {
+    const link = this.querySelector("a");
+    window.location.href = link;
+}
+
+const sections = document.querySelectorAll("section");
+const windowMetade = window.innerHeight * 0.6;
+
+function animaScroll() {
+    sections.forEach((section) => {
+        const sectionTop = section.getBoundingClientRect().top - windowMetade;
+        if (sectionTop < 0) {
+            section.classList.add("ativo");
+        }
+    });
+}
 //declarando elementos usados mais de uma fez como globais 
 const cardArea = document.querySelector(".cards");
 const paginas = document.querySelector(".paginas");
@@ -11,6 +40,7 @@ const btn = document.querySelector(".voltar-info");
 btn.addEventListener("click",trocarConteudo)
 const links = document.querySelectorAll(".paginas li a")
 links.forEach((item,index)=>{
+    item.addEventListener("click", scroll);
     item.classList.add("pagina"+index)
     item.addEventListener("click",trocarPagina);
 })
