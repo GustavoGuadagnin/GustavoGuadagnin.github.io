@@ -35,6 +35,7 @@ nav ul{
     color: rgba(255, 255, 0, 0.75);
 }
 nav h1{
+    margin-right:2rem;
     justify-self: center;
     font-family: 'Nova Square', sans-serif;
 }
@@ -195,7 +196,7 @@ nav h1{
 }
 @media (max-width:950px) {
     nav h1 {
-    margin-left: 5.1rem;
+    margin-left: 5.5rem;
     margin-right: 2.2rem;
     justify-self: center;
     font-family: 'Nova Square', sans-serif;
